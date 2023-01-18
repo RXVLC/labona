@@ -192,7 +192,7 @@ justify-content: center;
         
 
         /* vamos a poner el primer grid */
-        #contenedor_grid{
+        /* #contenedor_grid{
             background-color: yellow;
             margin-top: 50px;
 
@@ -242,4 +242,4 @@ justify-content: center;
             display: flex;
             justify-content: center;
             align-items: center;
-        }
+        } */
