@@ -23,6 +23,12 @@
     grid-template-columns:  50% auto ;
     margin: 0 auto;
 }
+/* ahora viene algo tedioso, intentaremos re adaptar el grid a resoluciones menores: */
+@media (min-width: 0px) {
+    .foto_grid{
+        display: none;
+    }
+}
 .foto_grid{
     float: left;
     background-color: black;
@@ -52,7 +58,7 @@
 
 
 .cuerpo_grid{
-    float: right;
+    float: left;
     height: 143px;
     width: 50%;
     background-color: blueviolet;
