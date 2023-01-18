@@ -1,0 +1,245 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #cf2e2e;
+    --secundario: #e22636;
+    --gris: #757575;
+    --amarillo: #d1ad2e;
+}
+
+@font-face {
+    font-family: Florida-font;
+    src: url(../fonts/NavineDemo-SemiCondensed.ttf);
+}
+
+@font-face {
+    font-family: 'geogrotesque cyr bold';
+    src: url('../fonts/geogrotesquecyr-bold.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    }
+
+@font-face {
+    font-family: 'geogrotesque cyr light';
+    src: url('../fonts/geogrotesquecyr-light.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    }
+
+*{
+        padding: 0;
+        margin: 0;
+    }
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px; /* 1rem = 10px */
+    font-weight: lighter;
+    font-family: "florida-font" ;
+    
+}
+
+
+
+header{
+    background-color: var(--primario);
+}
+@media (min-width: 1024px) {
+    header{
+        height: 220px;
+    }
+}
+
+#header {
+    background-color: var(--primario);
+    height: 16rem;
+    width: 100%;
+    color: var(--blanco);
+}
+
+#logo_header{
+
+height: 100%;
+width: 22rem;
+float: left;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#parte_arriba{
+
+    width: 100%;
+    height: 8rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.parte_arriba{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+@media (max-width: 768px) {
+    .parte_arriba {
+        background-color: var(--primario);
+        height: 100%;
+        width: 100%;
+        float: left;
+
+    }
+    .parte_arriba a {
+        
+        margin:1.75rem 0px; 
+        
+        
+    }
+    
+    #logo_header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 22rem;
+        
+        }
+}
+
+.parte_arriba a{
+    display: block;
+    text-align: center;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    border-right: 1px solid rgb(255, 255, 255);
+    margin:1.75rem 0; 
+    
+    }
+
+
+
+    .parte_arriba a:hover{
+        background-color: var(--primario);
+        color: var(--oscuro);
+    }
+    
+
+    #parte_abajo{
+
+        width: 100%;
+        height: 8rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .parte_abajo{
+        display: flex;
+        flex-direction: row;
+        margin-left: 22px;
+        justify-content: center;
+        
+    }
+    
+    @media (max-width: 768px) {
+        .parte_abajo {
+            background-color: var(--primario);
+            height: 23rem;
+            width: 101%;
+            float: left;
+            margin: 0 0 ;
+            
+            justify-content: flex-start;
+            flex-direction: column;
+            
+    
+        }
+        .parte_abajo a {
+            margin:1.75rem px; 
+            border: 1px var(--blanco) solid;
+
+            
+            
+        }
+        .parte_abajo a:hover{
+            border: 1px black solid;
+            background-color: var(--secundario);
+            color: black;
+        }
+    }
+    
+    .parte_abajo a{
+        color: var(--blanco);
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 1rem;
+        
+        }
+    
+    
+    
+        .parte_abajo a:hover{
+            
+            color: var(--oscuro);
+        }
+        
+
+        /* vamos a poner el primer grid */
+        #contenedor_grid{
+            background-color: yellow;
+            margin-top: 50px;
+
+        }
+
+        .box{
+            border: 4px solid black;
+            background-color: lightgray;
+            text-align:center;
+            line-height: 190px;
+        
+        
+        }
+        
+        .grid{
+            height: 80%;
+            width:80%;
+            background-color: lightgreen;
+            display: grid;
+            justify-content: stretch;
+            grid-template-rows: 20% 10% 25% 25% 20%  ;
+            grid-template-columns:  50% auto ;
+            margin: 0 auto;
+        }
+        .foto_grid{
+            float: left;
+            background-color: black;
+            width: 50%;
+            height: auto;
+        }
+
+        .imagen_grid{
+            height: 50%;
+            width: 100%;
+            float: left;
+        }
+
+        .texto_grid{
+            background-color: white;
+        }
+
+        .titulo_grid{
+            background-color: blue;
+            float: left;
+            height: 70px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }

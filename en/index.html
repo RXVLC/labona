@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Florida Uni</title>
+    <link rel="icon" href="https://www.floridauniversitaria.es/wp-content/uploads/2022/09/favicon-newmarcha.jpg" sizes="32x32" />
+    <link rel="icon" href="https://www.floridauniversitaria.es/wp-content/uploads/2022/09/favicon-newmarcha.jpg" sizes="192x192" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/idiomas.css">
+    <script>
+      /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+</head>
+<body>
+    <header>
+    <div id="header">
+        <div id="logo_header">
+            <img #logo_principal src="../img/Logo-Florida.png" alt="Logo Florida">
+        </div>
+       
+        <div id="parte_arriba">
+                <nav class="parte_arriba contenedor">
+                    <a href="#">News</a>
+                    <a href="#">Events</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Request Info.</a>
+                </nav>
+        </div>
+        
+        <div id="parte_abajo">
+            <nav class="parte_abajo contenedor">
+                
+                
+                <a href="#">About Us</a>
+                <a href="#">Studies</a>
+                <a href="#">Educational Model</a>
+                <a href="#">International</a>
+                <a href="#">Admission and Help</a>
+                
+                
+            </nav>
+            
+        </div>
+        
+    </div>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn" title="Pulsa para ver los idiomas disponibles">Click para Idiomas</button>
+          <div id="myDropdown" class="dropdown-content">
+            <div id="english"><img id="tick" src="../img/tick.png" alt=""><a href="./index.html"> &nbsp; &nbsp; &nbsp;English</a></div>
+        
+        <a href="../es/index.html">Español</a>
+        <a href="../val/index.html">Valencià</a>
+          </div>
+        </div> 
+    </header>
+
+
+    <div class="wrapper">
+        <div class="slider" id="slider">
+          <ul class="slides">
+            <li class="slide" id="slide1">
+              <!-- <a href="#"> -->
+                <p class="caption">Team Work</p>
+                <img src="../img/fotos_nuestras/2.jpeg" alt="photo 1">
+              <!-- </a> -->
+            </li>
+            <li class="slide" id="slide2">
+              <!-- <a href="#"> -->
+                <p class="caption">Coding together</p>
+                <img src="../img/fotos_nuestras/1.jpeg" alt="photo 2">
+              <!-- </a> -->
+            </li>
+            <li class="slide" id="slide1">
+                <!-- <a href="#"> -->
+                  <p class="caption">We are big</p>
+                  <img src="../img/fotos_nuestras/3.jpeg" alt="photo 1">
+                <!-- </a> -->
+              </li>
+            <li class="slide" id="slide2">
+                <!-- <a href="#"> -->
+                  <p class="caption">We are Florida</p>
+                  <img src="../img/fotos_nuestras/4.jpeg" alt="photo 2">
+                <!-- </a> -->
+          </ul>
+        </div>
+      </div>
+
+      <div id="contenedor_grid">
+        <div class="grid">
+          <div class="box box_header">
+            <div class="foto_grid">
+              <a href="#"><img class="imagen_grid" src="../img/fotos_nuestras/3.jpeg" alt=""></a>
+            </div>
+            <div class="texto_grid">
+              <div class="titulo_grid"><h1>sadas</h1></div>
+              
+            </div>
+          </div>
+          <div class="box box_menu">Menu</div>
+          <div class="box box_content">Content</div>
+          <div class="box box_slide_bar1">Slide Bar</div>
+          <div class="box box_slide_bar2">Slide Bar</div>
+          <div class="box box_footer">Footer</div>
+        </div>
+      </div>
+      
+
+</body>
+</html>
