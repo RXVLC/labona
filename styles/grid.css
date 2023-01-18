@@ -29,17 +29,27 @@
         display: none;
     }
 }
-.foto_grid{
+.div_icono_grid{
     float: left;
-    background-color: black;
+    background-color: white;
     width: 50%;
-    height: auto;
+    height: 100%;
+    
 }
 
-.imagen_grid{
-    height: 190px;
-    width: 170px;
-    float: left;
+.centrado_icono{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.icono_grid{
+    height: 90%;
+    width: 100%;
+    
 }
 
 .texto_grid{
