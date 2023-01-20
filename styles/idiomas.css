@@ -67,25 +67,28 @@
 
 /* prueba slider 2 */
 /* la siguiente linea es como el motor de la transicion */
-@keyframes slide {
+ @keyframes slide {
+	
+
+	-15% { transform: translateX(0); }
+	85% { transform: translateX(0);  }
+
 	0% { transform: translateX(0); }
-	10% { transform: translateX(0); }
+	100% { transform: translateX(0);  }
 
 	15% { transform: translateX(-100%); }
-	30% { transform: translateX(-100%); }
+	115% { transform: translateX(-100%); }
 
 	35% { transform: translateX(-200%); }
-	50% { transform: translateX(-200%); }
+	135% { transform: translateX(-200%); }
 
 	55% { transform: translateX(-300%); }
-	70% { transform: translateX(-300%); }
+	150% { transform: translateX(-300%); }
 
-	75% { transform: translateX(-400%); }
-	90% { transform: translateX(-400%); }
-
-	95% { transform: translateX(-500%); }
-	100% { transform: translateX(-500%); }
+	75% { transform: translateX(-300%); }
+	175% { transform: translateX(-300%); }
 }
+
 
 /* propiedad que nos permite hacer saltos en la página usando un 
 desplazamiento menos brusco y más agradable */
@@ -112,9 +115,10 @@ html { scroll-behavior: smooth; }
 	width: 150vw;
 	flex-shrink: 0;
 	animation-name: slide;
-	animation-duration: 20s;
+	animation-duration: 25s;
 	animation-iteration-count: infinite;
 	animation-timing-function:linear;
+	
 }
 
 .slides:hover .slide {
