@@ -12,17 +12,19 @@
 
 
 }
-
-.grid{
-    height: 80%;
-    width:80%;
-    background-color: lightgreen;
-    display: grid;
-    justify-content: stretch;
-    grid-template-rows: 20% 10% 25% 25% 20%  ;
-    grid-template-columns:  50% auto ;
-    margin: 0 auto;
+@media (min-width: 768px) {
+    .grid{
+        height: 100%;
+        width:80%;
+        background-color: lightgreen;
+        display: grid;
+        justify-content: stretch;
+        grid-template-rows: auto auto auto auto auto  ;
+        grid-template-columns:  50% auto ;
+        margin: 0 auto;
+    }
 }
+
 
 @media (max-width: 768px) {
     .grid{
@@ -61,6 +63,7 @@
 .texto_grid{
     background-color: white;
 }
+/* esto es para resoluciones pequeñas */
 @media (max-width: 700px) {
     .div_icono_grid{
         height: 0%;
@@ -113,26 +116,3 @@
 
 }
 
-/* .titulo_grid{
-    background-color: blue;
-    float: left;
-    height: 40%;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-
-/* .cuerpo_grid{
-    float: left;
-    height: 143px;
-    width: 50%;
-    background-color: blueviolet;
-    text-align: left;
-}
-.cuerpo_grid p{
-    margin: 4px 8px;
-    padding: 0;
-    
-} */
