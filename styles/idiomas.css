@@ -9,31 +9,31 @@
   	height: 60px;
   	width: 300px;
   	font-family: florida-font;
-  }
+}
 
-  
 
-  @media (max-width: 768px) {
+
+  	@media (max-width: 768px) {
 	.dropbtn{
 		margin-top: 25px;
 	}
 } 
 /* este mq sirve para alinear el botón en modo smartphone */ */
 
-  
+
   /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover, .dropbtn:focus {
 	background-color: var(--primario);
-  }
-  
+}
+
   /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+.dropdown {
 	position: relative;
 	display: inline-block;
-  }
-  
+}
+
   /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+.dropdown-content {
 	display: none;
 	position: absolute;
 	background-color: #f1f1f1;
@@ -41,33 +41,31 @@
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
+}
+
   /* Links inside the dropdown */
-  .dropdown-content a {
+.dropdown-content a {
 	color: black;
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;} 
+}
 
-  #tick{
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;} 
+
+#tick{
     height: 40px;
     float: left;
 }
 
 
 /* slider */
-
-/* prueba slider 2 */
 /* la siguiente linea es como el motor de la transicion */
- @keyframes slide {
+@keyframes slide {
 	
 
 	-15% { transform: translateX(0); }

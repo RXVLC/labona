@@ -183,7 +183,9 @@ justify-content: center;
         
         }
     
-    
+    body{
+        height: 100%;
+    }
     
         .parte_abajo a:hover{
             
