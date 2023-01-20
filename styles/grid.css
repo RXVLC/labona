@@ -1,6 +1,5 @@
 #contenedor_grid{
-    background-color: yellow;
-    margin-top: 50px;
+    background-color: var(--primario);
 
 }
 
@@ -44,7 +43,7 @@
 }
 
 .centrado_icono{
-    background-color: red;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,20 +92,22 @@
 
 @media (min-width: 700px) {
     .titulo_grid{
-    background-color: blue;
+    background-color: #00304E;
     float: left;
     height: 40%;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 .cuerpo_grid{
     float: left;
     height: 143px;
     width: 50%;
-    background-color: blueviolet;
+    background-color: var(--secundario);
     text-align: left;
+    color: white;
 }
 .cuerpo_grid p{
     margin: 4px 8px;
