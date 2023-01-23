@@ -209,18 +209,40 @@ footer{
 
 }
 
-.container_footer{
-    background-color: green;
-    height: 100%;
-    width: 80%;
-    margin: auto;
+/* media queryies para el contenedor y la parte izq. del footer */
+@media (min-width: 768px) {
+    .container_footer{
+        background-color: green;
+        height: 100%;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .izq_footer{
+        height: 100%;
+        width: 33%;
+        background-color: var(--azul);
+        float: left;
+    }
 }
 
-.izq_footer{
-    height: 100%;
-    width: 33%;
-    background-color: var(--azul);
-    float: left;
+@media (max-width: 768px) {
+    .container_footer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    .izq_footer{
+        height: 40rem;
+        width: 100%;
+        background-color: var(--azul);
+        float: left;
+    }
+    .logo_footer img{
+        height: 10rem;
+    }
+
 }
 
 .espacio_footer{
@@ -236,11 +258,7 @@ footer{
     display: flex;
     justify-content: center;
 }
-@media (max-width: 720px) {
-    .logo_footer img{
-    height: 20px;
-}
-}
+
 .redes_sociales_footer{
     height: 30%;
     width: 100%;
@@ -253,10 +271,14 @@ footer{
     width: 70%;
     height: 70%;
     
-    transition: 0s;
-    -moz-transition: 3s;
-    -webkit-transitin: 0s;
-    -o-transition: 0s;
+    transition: 1.5s;
+    -moz-transition: 1.5s;
+    -webkit-transitin: 1.5s;
+    -o-transition: 1.5s;
+    /* estos atributos de animación sirven para la compatibilidad de navegadores
+    por ejemplo, el que empieza por moz es para mozilla, así respectivamente con
+    demás */
+
 }
 
 .redes_sociales_footer a :hover{
@@ -289,37 +311,57 @@ footer{
     justify-content: center;
     float: left;
 }
+/* A partir de aquí se edita el centro del footer */
 
 
+@media (min-width: 768px) {
+    .centro_footer{
+        height: 100%;
+        width: 34%;
+        background-color: orange;
+        float: left;
+    }
+}
 
+@media (max-width: 768px) {
+    .centro_footer{
+        height: 40rem;
+        width: 100%;
+        background-color: red;
+        float: left;
+    }
+}
 
-.centro_footer{
+.centro_vacio{
+    background-color: purple;
     height: 100%;
-    width: 34%;
-    background-color: orange;
-    float: left;
-}
-
-.diferentes_centros_div{
-    background-color: black;
-    height: 45%;
-}
-
-.diferentes_centros_imagen{
-    background-color: black;
-    height: auto;
-}
-
-.diferentes_centros_texto{
-    float: right;
+    width: 100%;
 }
 
 
 
-.der_footer{
+
+
+@media (min-width: 768px) {
+    .der_footer{
+        height: 100%;
+        width: 33%;
+        background-color: red;
+        float: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .der_footer{
+        height: 40rem;
+        width: 100%;
+        background-color: red;
+        float: left;
+    }
+}
+
+.der_vacio{
+    background-color: yellow;
     height: 100%;
-    width: 33%;
-    background-color: red;
-    float: left;
+    width: 100%;
 }
-
