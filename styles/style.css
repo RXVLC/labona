@@ -222,6 +222,12 @@ footer{
     background-color: var(--azul);
     float: left;
 }
+
+.espacio_footer{
+    height: 25%;
+    width: 100%;
+}
+
 .logo_footer{
     float: left;
     height: 100px;
@@ -238,7 +244,6 @@ footer{
 .redes_sociales_footer{
     height: 30%;
     width: 100%;
-    background-color: aqua;
     float: left;
     margin-top: 5px;
     
@@ -248,20 +253,36 @@ footer{
     width: 70%;
     height: 70%;
     
-    
+    transition: 0s;
+    -moz-transition: 3s;
+    -webkit-transitin: 0s;
+    -o-transition: 0s;
 }
 
+.redes_sociales_footer a :hover{
+
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    
+    }
+    
+
 .icons_footer {
-    background-color: black;
+    /* esto es orientativo background-color: black; */
     float: left;
     height: 10%;
     width: 10%;
     margin-left: 1rem;
+
+
 }
 .alineado_iconos{
     display: flex;
     align-items: center;
-    background-color: yellow;
+    
     width: 20%;
     height: 100%;
     display: flex;
@@ -271,12 +292,29 @@ footer{
 
 
 
+
 .centro_footer{
     height: 100%;
     width: 34%;
     background-color: orange;
     float: left;
 }
+
+.diferentes_centros_div{
+    background-color: black;
+    height: 45%;
+}
+
+.diferentes_centros_imagen{
+    background-color: black;
+    height: auto;
+}
+
+.diferentes_centros_texto{
+    float: right;
+}
+
+
 
 .der_footer{
     height: 100%;
