@@ -5,6 +5,7 @@
     --secundario: #e22636;
     --gris: #757575;
     --amarillo: #d1ad2e;
+    --azul: #001524;
 }
 
 @font-face {
@@ -193,55 +194,34 @@ justify-content: center;
         }
         
 
-        /* vamos a poner el primer grid */
-        /* #contenedor_grid{
-            background-color: yellow;
-            margin-top: 50px;
+footer{
+    background-color: var(--azul);
+    height: 300px;
+    width: 100%;
+}
+.container_footer{
+    background-color: green;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+.izq_footer{
+    height: 100%;
+    width: 33%;
+    background-color: yellow;
+    float: left;
+}
 
-        }
+.centro_footer{
+    height: 100%;
+    width: 34%;
+    background-color: orange;
+    float: left;
+}
 
-        .box{
-            border: 4px solid black;
-            background-color: lightgray;
-            text-align:center;
-            line-height: 190px;
-        
-        
-        }
-        
-        .grid{
-            height: 80%;
-            width:80%;
-            background-color: lightgreen;
-            display: grid;
-            justify-content: stretch;
-            grid-template-rows: 20% 10% 25% 25% 20%  ;
-            grid-template-columns:  50% auto ;
-            margin: 0 auto;
-        }
-        .foto_grid{
-            float: left;
-            background-color: black;
-            width: 50%;
-            height: auto;
-        }
-
-        .imagen_grid{
-            height: 50%;
-            width: 100%;
-            float: left;
-        }
-
-        .texto_grid{
-            background-color: white;
-        }
-
-        .titulo_grid{
-            background-color: blue;
-            float: left;
-            height: 70px;
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        } */
+.der_footer{
+    height: 100%;
+    width: 33%;
+    background-color: red;
+    float: left;
+}
