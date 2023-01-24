@@ -340,6 +340,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .centro_direccion , .centro_contacto{
@@ -354,11 +355,11 @@ footer{
     margin-top: 2rem;
     }
 
-    .espacio_contacto a , p{
+
+    .centro_container a{
         text-decoration: none;
         color: white;
-        }
-
+    }
 
 
 /* a partir de aquí vamos a diseñar la parte derecha del footer */

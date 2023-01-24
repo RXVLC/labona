@@ -29,6 +29,7 @@
     .texto_grid{
     background-color: var(--secundario);
 }
+
 }
 
 
@@ -36,6 +37,10 @@
     .grid{
         display:flex;
         flex-direction: column;
+        
+    }
+    .cuerpo_grid {
+        text-decoration: none;
     }
 }
 
@@ -72,13 +77,7 @@
     width: 60%;
 }
 
-.texto_grid{
-    background-color: var(--secundario);
-}
 
-.texto_grid{
-    background-color: white;
-}
 /* esto es para resoluciones pequeñas */
 @media (max-width: 700px) {
     .div_icono_grid{
@@ -109,6 +108,7 @@
         color: white;
         
     }
+
     .texto_grid{
         background-color: var(--secundario);
     }

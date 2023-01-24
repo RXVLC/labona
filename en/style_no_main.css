@@ -1,0 +1,13 @@
+.btn{
+  display:inline-block;
+  background:#ccc;
+  line-height:36px;
+  padding: 0 10px;
+  cursor:pointer;
+}
+div{
+  display:none
+}
+div.active{
+  display:block
+}

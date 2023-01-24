@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/idiomas.css">
     <link rel="stylesheet" href="../styles/grid.css">
+    <link rel="stylesheet" href="./style_no_main.css">
     <script>
       /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
@@ -31,23 +32,6 @@ window.onclick = function(event) {
   }
 }
     </script>
-
-<script>
-  const btns = document.querySelectorAll('.btn');
-
-if(btns){
-	btns.forEach(item => {
-  	item.addEventListener('click', function(event){
-    	let id = event.target.getAttribute('data-id');
-      if(id){
-      	document.querySelector('.active').classList.remove('active');
-      	document.getElementById(id).classList.add('active');
-      }
-    })
-  })
-}
-</script>
-
 </head>
 <body>
     <header>
@@ -93,114 +77,26 @@ if(btns){
     </header>
 
 
-    <div class="wrapper">
-        <div class="slider" id="slider">
-          <ul class="slides">
-            <li class="slide" id="slide1">
-              <!-- <a href="#"> -->
-                <p class="caption">Team Work</p>
-                <img src="../img/fotos_nuestras/2.jpeg" alt="photo 1">
-              <!-- </a> -->
-            </li>
-            <li class="slide" id="slide2">
-              <!-- <a href="#"> -->
-                <p class="caption">Coding together</p>
-                <img src="../img/fotos_nuestras/1.jpeg" alt="photo 2">
-              <!-- </a> -->
-            </li>
-            <li class="slide" id="slide1">
-                <!-- <a href="#"> -->
-                  <p class="caption">We are big</p>
-                  <img src="../img/fotos_nuestras/3.jpeg" alt="photo 1">
-                <!-- </a> -->
-              </li>
-            <li class="slide" id="slide2">
-                <!-- <a href="#"> -->
-                  <p class="caption">We are Florida</p>
-                  <img src="../img/fotos_nuestras/4.jpeg" alt="photo 2">
-                <!-- </a> -->
-          </ul>
-        </div>
-      </div>
-      <div class="espacio_grid"></div>
-      <div id="contenedor_grid">
-        <div class="grid">
+<body><div class="sub">
+    <span class="btn" data-id="tab-1">Tab #1</span>
+<span class="btn">Tab #2</span>
+<span class="btn" data-id="tab-3">Tab #3</span>
+<span class="btn" data-id="tab-4">Tab #4</span>
 
-          <!-- diferentes grados -->
-          <div class="box box_grados">
-            <div class="div_icono_grid">
-              <a href="./subjects.html">
-                <div class="centrado_icono"><img class="icono_grid" src="../icons/study-2-svgrepo-com.svg" alt=""></div>
-            </div>
-            <div class="texto_grid">
-              <div class="titulo_grid"><h1>Subjects</h1></div>
-              <div class="cuerpo_grid"><p>Here you can see the subjects that are studied in the two years of TSMR</p></div>
-            </div></a>
-          </div>
-
-          <!-- nose -->
-          <div class="box box_">
-            <div class="div_icono_grid">
-              <a href="#">
-                <div class="centrado_icono"><img class="icono_grid" src="../icons/education.svg" alt=""></div>
-            </div>
-            <div class="texto_grid">
-              <div class="titulo_grid"><h1>Advanced Vocational training courses</h1></div>
-              <div class="cuerpo_grid"><p>If you have completed the TSMR vocational training, you can access some advanced vocational trainings courses on this page.</p></div>
-            </div></a>
-          </div>
+<div id="tab-1" class="active">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur atque ut aliquid. Ipsam tenetur vero laborum, fugiat vel rerum quo.</div>
+<div id="tab-2">Minus similique consequatur modi aperiam ullam ad veritatis quibusdam in velit quidem, illum cumque laborum debitis, ut voluptatibus distinctio, accusamus.</div>
+<div id="tab-3">Eos natus nesciunt commodi quibusdam, doloremque pariatur earum, dolorum tempore, facere nobis accusamus animi. Impedit tempore fugit repellendus officia provident.</div>
+<div id="tab-4">Consequuntur illo earum, nisi omnis expedita vitae ullam assumenda sapiente dolore ipsa cum reiciendis rem, qui dolores facilis ad quas!</div>
+</div>
+</body>
 
 
-          <div class="box box_content">
-            <div class="div_icono_grid">
-              <a href="#">
-                <div class="centrado_icono"><img class="icono_grid" src="../icons/places.svg" alt=""></div>
-            </div>
-            <div class="texto_grid">
-              <div class="titulo_grid"><h1>Facilities</h1></div>
-              <div class="cuerpo_grid"><p> Discover our facilities and where you can find us!</p></div>
-            </div></a>
-          </div>
-
-          <div class="box box_slide_bar1">
-            <div class="div_icono_grid">
-              <a href="#">
-                <div class="centrado_icono"><img class="icono_grid" id="educational" src="../icons/whiteboard.svg" alt=""></div>
-            </div>
-            <div class="texto_grid">
-              <div class="titulo_grid"><h1> Educational Model </h1></div>
-              <div class="cuerpo_grid"><p>The education is fundamental, here we explain you how we apply the education in Florida.</p></div>
-            </div></a>
-          </div>
 
 
-          <div class="box box_slide_bar2">
-            <div class="div_icono_grid">
-              <a href="#">
-                <div class="centrado_icono"><img class="icono_grid" id="international" src="../icons/international.svg" alt=""></div>
-            </div>
-            <div class="texto_grid">
-              <div class="titulo_grid"><h1> International </h1></div>
-              <div class="cuerpo_grid"><p>Do you know that you can study in almost all countries around the world? Discover more here.</p></div>
-            </div></a>
-          </div>
 
 
-          <div class="box box_footer">
-            <div class="div_icono_grid">
-              <a href="#">
-                <div class="centrado_icono"><img class="icono_grid" id="about" src="../icons/about.svg" alt=""></div>
-            </div>
-            <div class="texto_grid">
-              <div class="titulo_grid"><h1>About us</h1></div>
-              <div class="cuerpo_grid"><p>More information about us :)</p></div>
-            </div></a>
-          </div>
-        </div>
-      </div>
-      <div class="espacio_grid"></div>
-
-      <footer>
+    
+    <footer>
         <div class="container_footer">
           <div class="izq_footer">
             <div class="espacio_footer"></div>
@@ -254,3 +150,4 @@ if(btns){
 
 </body>
 </html>
+
