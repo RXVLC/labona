@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../styles/idiomas.css">
     <link rel="stylesheet" href="../styles/grid.css">
     <link rel="stylesheet" href="./style_no_main.css">
+    <script src="../tablas_subject.js"></script>
     <script>
       /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
@@ -32,6 +33,27 @@ window.onclick = function(event) {
   }
 }
     </script>
+
+<script>
+  const btns = document.querySelectorAll('.btn');
+
+if(btns){
+	btns.forEach(item => {
+  	item.addEventListener('click', function(event){
+    	let id = event.target.getAttribute('data-id');
+      if(id){
+      	document.querySelector('.active').classList.remove('active');
+      	document.getElementById(id).classList.add('active');
+      }
+    })
+  })
+}
+</script>
+
+<script>
+
+</script>
+
 </head>
 <body>
     <header>
@@ -76,78 +98,90 @@ window.onclick = function(event) {
         </div> 
     </header>
 
+    <div class="selector_tables">
+      <input href="#oldNews" type=button class="pull-right btn btn-primary" value="Mostrar tabla 1 / Ocultar tabla 1" onclick="showHide('oldNews')"></br>
+<input href="#oldNews" type=button class="pull-right btn btn-primary" value="Mostrar tabla 2 / Ocultar tabla 2" onclick="showHide('old2')"></br>
 
-<body><div class="sub">
-    <span class="btn" data-id="tab-1">Tab #1</span>
-<span class="btn">Tab #2</span>
-<span class="btn" data-id="tab-3">Tab #3</span>
-<span class="btn" data-id="tab-4">Tab #4</span>
 
-<div id="tab-1" class="active">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur atque ut aliquid. Ipsam tenetur vero laborum, fugiat vel rerum quo.</div>
-<div id="tab-2">Minus similique consequatur modi aperiam ullam ad veritatis quibusdam in velit quidem, illum cumque laborum debitis, ut voluptatibus distinctio, accusamus.</div>
-<div id="tab-3">Eos natus nesciunt commodi quibusdam, doloremque pariatur earum, dolorum tempore, facere nobis accusamus animi. Impedit tempore fugit repellendus officia provident.</div>
-<div id="tab-4">Consequuntur illo earum, nisi omnis expedita vitae ullam assumenda sapiente dolore ipsa cum reiciendis rem, qui dolores facilis ad quas!</div>
-</div>
-</body>
+
+<div class="dropdown_subjects">
+  <button onclick="myFunction(paco)" class="dropbtn_subjects" title="Click to see the available languages">Click for Languajes</button>
+  <div id="myDropdown_subjects" class="dropdown-content_subjects">
+    <div id="english"><img id="tick" src="../img/tick.png" alt=""><a href="./index.html"> &nbsp; &nbsp; &nbsp;English</a></div>
 
 
 
 
 
 
-    
-    <footer>
-        <div class="container_footer">
-          <div class="izq_footer">
-            <div class="espacio_footer"></div>
-            <div class="logo_footer"><img src="../icons/Logo-florida-blanco.svg" alt=""></div>
-            <div class="redes_sociales_footer">
-              
-              <div class="instagram alineado_iconos"><a href="https://www.instagram.com/florida_uni/" target="_blank"><img class="icons_footer" src="../icons/instagram.svg" alt=""></a></div>
-              
-              <div class="twitter alineado_iconos"><a href="https://twitter.com/floridauni" target="_blank"><img class="icons_footer " src="../icons/twitter.svg" alt=""></a></div>
 
-              <div class="linkedin_ alineado_iconos"><a href="https://www.linkedin.com/school/15095524/admin/" target="_blank"><img class="icons_footer  linkedin" src="../icons/linkedin.svg" alt=""></a></div>
+<a href="../es/index.html">Español</a>
+<a href="../val/index.html">Valencià</a>
+  </div>
+</div> 
 
-              <div class="facebook alineado_iconos"><a href="https://www.facebook.com/floridauniversitaria" target="_blank"><img class="icons_footer" src="../icons/facebook.svg" alt=""></a></div>
+<table class="table table-striped" id="oldNews">
+  <thead>
 
-              <div class="pep alineado_iconos"><a href="https://www.youtube.com/channel/UCXcVroy1ofPxv2GRrzp0_Tw" target="_blank"><img class="icons_footer" src="../icons/youtube.svg" alt=""></a></div>
+    <tr>
+      <th scope="col">Tabla 1</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
 
-            </div>
-          </div>
 
+<table class="table table-striped" id="old2">
+  <thead>
 
-          <div class="centro_footer">
-            <div class="centro_container">
-              <a href="https://goo.gl/maps/MofCRgt1QWkSV63w7" target="_blank">
-              <div class="centro_direccion espacio_direccion">
-                <p>C/ Rei en Jaume I, nº 2, 46470</p>
-              </div>
-          
-              <div class="centro_direccion">
-                <p>CATARROJA (Valencia)</p>
-              </div>
-            </a>
-
-              <div class="centro_contacto espacio_contacto">
-                <p> <a href="tel:+34961220380">+34 96 122 03 80</a>
-                  - 
-                  <a href="mailto:info@florida.es">info@florida.es</a> </p>
-              </div>
-            </div>
-          </div>
-          <div class="der_footer">
-            <div class="der_vacio">
-              <div class="uv"><img src="../icons/som-cooperativa.png" alt=""></div>
-              <div class="uv"><img src="../icons/uv.svg" alt=""></div>
-              <div class="uv"><img src="../icons/upv-ok.svg" alt=""></div>
-              <div class="uv"><img src="../icons/gv.svg" alt=""></div>
-
-            </div>
-          </div>
-        </div>
-      </footer>
-
-</body>
-</html>
-
+    <tr>
+      <th scope="col">Tabla 2</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
