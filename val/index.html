@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,28 @@
     <link rel="icon" href="https://www.floridauniversitaria.es/wp-content/uploads/2022/09/favicon-newmarcha.jpg" sizes="192x192" />
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/idiomas.css">
-    
+    <link rel="stylesheet" href="../styles/grid.css">
+    <script>
+      /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
 </head>
 <body>
     <header>
@@ -17,13 +38,13 @@
         <div id="logo_header">
             <img #logo_principal src="../img/Logo-Florida.png" alt="Logo Florida">
         </div>
-       
+        
         <div id="parte_arriba">
                 <nav class="parte_arriba contenedor">
-                    <a href="#">Noticias</a>
-                    <a href="#">Eventos</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Solicita Info.</a>
+                    <a href="#">News</a>
+                    <a href="#">Events</a>
+                    <a href="https://blogs.florida.es/floridauniversitariablog/" target="_blank">Blog</a>
+                    <a href="#">Request Info.</a>
                 </nav>
         </div>
         
@@ -31,11 +52,11 @@
             <nav class="parte_abajo contenedor">
                 
                 
-                <a href="#">Conócenos</a>
-                <a href="#">Estudios</a>
-                <a href="#">Modelo educativo</a>
-                <a href="#">Internacional</a>
-                <a href="#">Admisión y Ayudas</a>
+                <a href="#">About Us</a>
+                <a href="#">Studies</a>
+                <a href="#">Educational Model</a>
+                <a href="#">International</a>
+                <a href="#">Admission and Help</a>
                 
                 
             </nav>
@@ -43,30 +64,176 @@
         </div>
         
     </div>
-    <div class="dropdown">
-        <button class="dropbtn">Idiomas</button>
-        <div class="dropdown-content">
-            <div id="val"><img id="tick" src="../img/tick.png" alt=""><a href="#"> &nbsp; &nbsp; &nbsp;Valencià</a></div>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn" title="Click to see the available languages">Click for Languajes</button>
+          <div id="myDropdown" class="dropdown-content">
+            <div id="english"><img id="tick" src="../img/tick.png" alt=""><a href="./index.html"> &nbsp; &nbsp; &nbsp;English</a></div>
         
-        <a href="../en/index.html">English</a>
-        <a href="../es/index.html">Espanyol</a>
-        </div>
+        <a href="../es/index.html">Español</a>
+        <a href="../val/index.html">Valencià</a>
+          </div>
+        </div> 
     </header>
 
-    
 
-        <div class="envuelve_slider">
-            <div class="slider">
-                <ul>
-                <li><img src="../img/florida1.png" alt=""></li>
-                <li><img src="../img/florida2.png" alt=""></li>
-                <li><ing src="img/3.jpg" alt=""></li>
-                <li><img src="img/4.jpg" alt=""></li>
-                </ul>
+    <div class="wrapper">
+        <div class="slider" id="slider">
+          <ul class="slides">
+            <li class="slide" id="slide1">
+              <!-- <a href="#"> -->
+                <p class="caption">Team Work</p>
+                <img src="../img/fotos_nuestras/2.jpeg" alt="photo 1">
+              <!-- </a> -->
+            </li>
+            <li class="slide" id="slide2">
+              <!-- <a href="#"> -->
+                <p class="caption">Coding together</p>
+                <img src="../img/fotos_nuestras/1.jpeg" alt="photo 2">
+              <!-- </a> -->
+            </li>
+            <li class="slide" id="slide1">
+                <!-- <a href="#"> -->
+                  <p class="caption">We are big</p>
+                  <img src="../img/fotos_nuestras/3.jpeg" alt="photo 1">
+                <!-- </a> -->
+              </li>
+            <li class="slide" id="slide2">
+                <!-- <a href="#"> -->
+                  <p class="caption">We are Florida</p>
+                  <img src="../img/fotos_nuestras/4.jpeg" alt="photo 2">
+                <!-- </a> -->
+          </ul>
+        </div>
+      </div>
+      <div class="espacio_grid"></div>
+      <div id="contenedor_grid">
+        <div class="grid">
+
+          <!-- diferentes grados -->
+          <div class="box box_grados">
+            <div class="div_icono_grid">
+              <a href="#">
+                <div class="centrado_icono"><img class="icono_grid" src="../icons/study-2-svgrepo-com.svg" alt=""></div></a>
             </div>
-        </div> 
-    <div>
-        <h1>CUANDO ACABEMOS LA VERSION INGLÉS PEGAREMOS TODO EL CÓDIGO Y LO TRADUCIREMOS</h1>
-    </div>
+            <div class="texto_grid">
+              <div class="titulo_grid"><h1>SUBJECTS</h1></div>
+              <div class="cuerpo_grid"><p>Here you can see the subjects that are studied in the two years of TSMR</p></div>
+            </div>
+          </div>
+
+          <!-- nose -->
+          <div class="box box_">
+            <div class="div_icono_grid">
+              <a href="#">
+                <div class="centrado_icono"><img class="icono_grid" src="../icons/education.svg" alt=""></div></a>
+            </div>
+            <div class="texto_grid">
+              <div class="titulo_grid"><h1>Advanced Vocational training courses</h1></div>
+              <div class="cuerpo_grid"><p>If you have completed the TSMR vocational training, you can access some advanced vocational trainings courses on this page.</p></div>
+            </div>
+          </div>
+
+
+          <div class="box box_content">
+            <div class="div_icono_grid">
+              <a href="#">
+                <div class="centrado_icono"><img class="icono_grid" src="../icons/places.svg" alt=""></div></a>
+            </div>
+            <div class="texto_grid">
+              <div class="titulo_grid"><h1>FACILITIES</h1></div>
+              <div class="cuerpo_grid"><p> Discover our facilities and where you can find us!</p></div>
+            </div>
+          </div>
+
+          <div class="box box_slide_bar1">
+            <div class="div_icono_grid">
+              <a href="#">
+                <div class="centrado_icono"><img class="icono_grid" id="educational" src="../icons/whiteboard.svg" alt=""></div></a>
+            </div>
+            <div class="texto_grid">
+              <div class="titulo_grid"><h1> Educational Model </h1></div>
+              <div class="cuerpo_grid"><p>Hola! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,nasjdnsasjknd askdjalsjdas laksjdlkasjlkdjas ksajdlkasj kasdn lknsad lksndklansdklna lksandklasn lk</p></div>
+            </div>
+          </div>
+
+
+          <div class="box box_slide_bar2">
+            <div class="div_icono_grid">
+              <a href="#">
+                <div class="centrado_icono"><img class="icono_grid" id="international" src="../icons/international.svg" alt=""></div></a>
+            </div>
+            <div class="texto_grid">
+              <div class="titulo_grid"><h1> International </h1></div>
+              <div class="cuerpo_grid"><p>Do you know that you can study in almost all countries around the world? Discover more here.</p></div>
+            </div>
+          </div>
+
+
+          <div class="box box_footer">
+            <div class="div_icono_grid">
+              <a href="#">
+                <div class="centrado_icono"><img class="icono_grid" id="about" src="../icons/about.svg" alt=""></div></a>
+            </div>
+            <div class="texto_grid">
+              <div class="titulo_grid"><h1>About us</h1></div>
+              <div class="cuerpo_grid"><p>More information about us :)</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="espacio_grid"></div>
+
+      <footer>
+        <div class="container_footer">
+          <div class="izq_footer">
+            <div class="espacio_footer"></div>
+            <div class="logo_footer"><img src="../icons/Logo-florida-blanco.svg" alt=""></div>
+            <div class="redes_sociales_footer">
+              
+              <div class="instagram alineado_iconos"><a href="https://www.instagram.com/florida_uni/" target="_blank"><img class="icons_footer" src="../icons/instagram.svg" alt=""></a></div>
+              
+              <div class="twitter alineado_iconos"><a href="https://twitter.com/floridauni" target="_blank"><img class="icons_footer " src="../icons/twitter.svg" alt=""></a></div>
+
+              <div class="linkedin_ alineado_iconos"><a href="https://www.linkedin.com/school/15095524/admin/" target="_blank"><img class="icons_footer  linkedin" src="../icons/linkedin.svg" alt=""></a></div>
+
+              <div class="facebook alineado_iconos"><a href="https://www.facebook.com/floridauniversitaria" target="_blank"><img class="icons_footer" src="../icons/facebook.svg" alt=""></a></div>
+
+              <div class="pep alineado_iconos"><a href="https://www.youtube.com/channel/UCXcVroy1ofPxv2GRrzp0_Tw" target="_blank"><img class="icons_footer" src="../icons/youtube.svg" alt=""></a></div>
+
+            </div>
+          </div>
+
+
+          <div class="centro_footer">
+            <div class="centro_container">
+              <div class="centro_direccion espacio_direccion">
+                <p>C/ Rei en Jaume I, nº 2, 46470</p>
+                
+
+              </div>
+              <div class="centro_direccion">
+                <p>CATARROJA (Valencia)</p>
+                
+
+              </div>
+              <div class="centro_contacto espacio_contacto">
+                <p> <a href="tel:+34961220380">+34 96 122 03 80</a>
+                  - 
+                  <a href="mailto:+34 96 122 03 80">info@florida.es</a> </p>
+              </div>
+            </div>
+          </div>
+          <div class="der_footer">
+            <div class="der_vacio">
+              <div class="uv"><img src="../icons/som-cooperativa.png" alt=""></div>
+              <div class="uv"><img src="../icons/uv.svg" alt=""></div>
+              <div class="uv"><img src="../icons/upv-ok.svg" alt=""></div>
+              <div class="uv"><img src="../icons/gv.svg" alt=""></div>
+
+            </div>
+          </div>
+        </div>
+      </footer>
+
 </body>
 </html>
