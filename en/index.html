@@ -32,21 +32,7 @@ window.onclick = function(event) {
 }
     </script>
 
-<script>
-  const btns = document.querySelectorAll('.btn');
 
-if(btns){
-	btns.forEach(item => {
-  	item.addEventListener('click', function(event){
-    	let id = event.target.getAttribute('data-id');
-      if(id){
-      	document.querySelector('.active').classList.remove('active');
-      	document.getElementById(id).classList.add('active');
-      }
-    })
-  })
-}
-</script>
 
 </head>
 <body>
@@ -68,12 +54,12 @@ if(btns){
         <div id="parte_abajo">
             <nav class="parte_abajo contenedor">
                 
-                
+                <a href="#">Inicio</a>
                 <a href="#">About Us</a>
                 <a href="#">Studies</a>
                 <a href="#">Educational Model</a>
                 <a href="#">International</a>
-                <a href="#">Admission and Help</a>
+                
                 
                 
             </nav>

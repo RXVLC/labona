@@ -98,90 +98,116 @@ if(btns){
         </div> 
     </header>
 
-    <div class="selector_tables">
-      <input href="#oldNews" type=button class="pull-right btn btn-primary" value="Mostrar tabla 1 / Ocultar tabla 1" onclick="showHide('oldNews')"></br>
-<input href="#oldNews" type=button class="pull-right btn btn-primary" value="Mostrar tabla 2 / Ocultar tabla 2" onclick="showHide('old2')"></br>
-
-
-
-<div class="dropdown_subjects">
-  <button onclick="myFunction(paco)" class="dropbtn_subjects" title="Click to see the available languages">Click for Languajes</button>
-  <div id="myDropdown_subjects" class="dropdown-content_subjects">
-    <div id="english"><img id="tick" src="../img/tick.png" alt=""><a href="./index.html"> &nbsp; &nbsp; &nbsp;English</a></div>
-
-
-
-
-
-
-
-<a href="../es/index.html">Español</a>
-<a href="../val/index.html">Valencià</a>
-  </div>
-</div> 
-
-<table class="table table-striped" id="oldNews">
-  <thead>
-
-    <tr>
-      <th scope="col">Tabla 1</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-
-
-<table class="table table-striped" id="old2">
-  <thead>
-
-    <tr>
-      <th scope="col">Tabla 2</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+    <div class="botones_subjects">
+      <button onclick="TSMR1()"><h1>Click para ver/ocultar las asignaturas de 1ero de TSMR</h1></button>
+      <button onclick="TSMR2()"><h1>Click para ver/ocultar las asignaturas de 2do de TSMR</h1></button>
+      
     </div>
+      
+
+    
+
+      
+
+      <div class="diferentes_ciclos">
+
+
+
+
+        <div id="tsmr2" style="border:1px solid black; display: none;">
+          <br><br><br><br>
+            Este elemento aparece y desaparece con el botón
+            Este elemento aparece y desaparece con el botón
+            Este elemento aparece y desaparece con el botón
+            Este elemento aparece y desaparece con el botón
+            Este elemento aparece y desaparece con el botón
+            Este elemento aparece y desaparece con el botón
+            Este elemento aparece y desaparece con el botón
+            Este elemento aparece y desaparece con el botón
+            Este elemento aparece y desaparece con el botón
+            Este elemento aparece y desaparece con el botón
+            Este elemento aparece y desaparece con el botón
+            Este elemento aparece y desaparece con el botón
+            Este elemento aparece y desaparece con el botón
+            Este elemento aparece y desaparece con el botón
+            Este elemento aparece y desaparece con el botón
+            Este elemento aparece y desaparece con el botón
+            Este elemento aparece y desaparece con el botón
+
+          
+          </div>
+          <div id="contenedor_grid myDIV" id="">
+            <div class="grid">   
+          <div class="box box_grados" >
+            <div class="div_icono_grid">
+              <a href="./subjects.html">
+                <div class="centrado_icono"><img class="icono_grid" src="../icons/study-2-svgrepo-com.svg" alt=""></div>
+            </div>
+            <div class="texto_grid">
+              <div class="titulo_grid"><h1>Ofimatic</h1></div>
+              <div class="cuerpo_grid"><p>Ofimatica se trata de aplicaciones con asjd aleknd si y sin akjsbdjb akjsdb be iubda</p></div>
+            </div></a>
+          </div>
+
+          <!-- nose -->
+          <div class="box box_">
+            <div class="div_icono_grid">
+              <a href="#">
+                <div class="centrado_icono"><img class="icono_grid" src="../icons/education.svg" alt=""></div>
+            </div>
+            <div class="texto_grid">
+              <div class="titulo_grid"><h1>Advanced Vocational training courses</h1></div>
+              <div class="cuerpo_grid"><p>If you have completed the TSMR vocational training, you can access some advanced vocational trainings courses on this page.</p></div>
+            </div></a>
+          </div>
+
+
+          <div class="box box_content">
+            <div class="div_icono_grid">
+              <a href="#">
+                <div class="centrado_icono"><img class="icono_grid" src="../icons/places.svg" alt=""></div>
+            </div>
+            <div class="texto_grid">
+              <div class="titulo_grid"><h1>Facilities</h1></div>
+              <div class="cuerpo_grid"><p> Discover our facilities and where you can find us!</p></div>
+            </div></a>
+          </div>
+
+          <div class="box box_slide_bar1">
+            <div class="div_icono_grid">
+              <a href="#">
+                <div class="centrado_icono"><img class="icono_grid" id="educational" src="../icons/whiteboard.svg" alt=""></div>
+            </div>
+            <div class="texto_grid">
+              <div class="titulo_grid"><h1> Educational Model </h1></div>
+              <div class="cuerpo_grid"><p>The education is fundamental, here we explain you how we apply the education in Florida.</p></div>
+            </div></a>
+          </div>
+
+
+          <div class="box box_slide_bar2">
+            <div class="div_icono_grid">
+              <a href="#">
+                <div class="centrado_icono"><img class="icono_grid" id="international" src="../icons/international.svg" alt=""></div>
+            </div>
+            <div class="texto_grid">
+              <div class="titulo_grid"><h1> International </h1></div>
+              <div class="cuerpo_grid"><p>Do you know that you can study in almost all countries around the world? Discover more here.</p></div>
+            </div></a>
+          </div>
+
+
+          <div class="box box_footer">
+            <div class="div_icono_grid">
+              <a href="#">
+                <div class="centrado_icono"><img class="icono_grid" id="about" src="../icons/about.svg" alt=""></div>
+            </div>
+            <div class="texto_grid">
+              <div class="titulo_grid"><h1>About us</h1></div>
+              <div class="cuerpo_grid"><p>More information about us :)</p></div>
+            </div></a>
+          </div>
+        </div>
+      </div>
+      <div class="espacio_grid"></div>
+      </div>
