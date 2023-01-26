@@ -52,27 +52,6 @@ body{
 	background-color: yellow;
 }
 
-@media (min-width: 768px) {
-	#fondo_azul_por_footer{
-		height:70rem;
-		width:100%;
-		color: var(--blanco);
-		margin-top: 30rem;
-	}
-}
-
-@media (max-width: 768px) {
-	#fondo_azul_por_footer{
-		height:30rem;
-		width:100%;
-		color: var(--blanco);
-		margin-top: 10rem;
-	}
-}
-
-#fondo_azul_por_footer{
-	text-align: center;
-}
 
 .recordatorio{
 	text-align: center;
@@ -130,4 +109,8 @@ body{
 	.cuerpo_info{
 		display: grid;
 		grid-template-rows: 10rem auto;
+	}
+
+	#foot{
+		margin-top: 0px;
 	}
