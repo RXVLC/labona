@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beggining - Florida Uni</title>
+    <link rel="icon" href="https://www.floridauniversitaria.es/wp-content/uploads/2022/09/favicon-newmarcha.jpg" sizes="32x32" />
+    <link rel="icon" href="https://www.floridauniversitaria.es/wp-content/uploads/2022/09/favicon-newmarcha.jpg" sizes="192x192" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/idiomas.css">
+    <link rel="stylesheet" href="../styles/grid.css">
+    <link rel="stylesheet" href="../styles/style_no_main.css">
+    <script src="../tablas_subject.js"></script>
+    <script>
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+        }
+    }
+    }
+}
+    </script>
+
+
+
+</head>
+<body>
+    <header>
+    <div id="header">
+        <div id="logo_header">
+            <img #logo_principal src="../img/Logo-Florida.png" alt="Logo Florida">
+        </div>
+        
+        <div id="parte_arriba">
+                <nav class="parte_arriba contenedor">
+                    <a href="#">News</a>
+                    <a href="#">Events</a>
+                    <a href="https://blogs.florida.es/floridauniversitariablog/" target="_blank">Blog</a>
+                    <a href="#">Request Info.</a>
+                </nav>
+        </div>
+        
+        <div id="parte_abajo">
+            <nav class="parte_abajo contenedor">
+                
+                <a href="./index.html">Beggining</a>
+                <a href="#">About Us</a>
+                <a href="#">Studies</a>
+                <a href="#">Educational Model</a>
+                <a href="#">International</a>
+                
+                
+                
+            </nav>
+            
+        </div>
+        
+    </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn" title="Click to see the available languages">Click for Languajes</button>
+            <div id="myDropdown" class="dropdown-content">
+            <div id="english"><img id="tick" src="../img/tick.png" alt=""><a href="#"> &nbsp; &nbsp; &nbsp;English</a></div>
+        
+        <a href="../es/superior.html">Español</a>
+        <a href="../val/superior.html">Valencià</a>
+            </div>
+        </div> 
+    </header>
+    <div class="botones_subjects">
+        <button onclick="TSMR1()"><h1>DAW</h1></button>
+        <button onclick="TSMR2()"><h1>DAM</h1></button>
+        <button onclick="TSMR2()"><h1>ASIR</h1></button>
+        <button onclick="TSMR2()"><h1>Videojuegos</h1></button>
+      </div>
+      <div class="recordatorio"><h1>Recuerda desactivar los módulos activos, si no lo haces no verás tu información correctamente</h1></div>
+        
+  
+      
+  
+        
+        <div id="fondo_azul_por_footer" style=" display:block;" >&nbsp; <h1>press a button to get info</h1></div>
+  
+            <div id="contenedor_grid contenedor_subjects">
+              
+              <div class="grid" id="grid1" style="display: none;">   
+                <div class="daw">
+                    <div class="encabezado_daw"><h1>Desarrollo de Aplicaciones Web</h1></div>
+                    <div class="grid_info">
+                        <div class="video_info"><iframe width="560" height="315" src="https://www.youtube.com/embed/X66qfyC3HYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                        <div class="cuerpo_info">
+                            <div class="titulo_info"><h1>¿Que es el desarrollo de Aplicaciones Web?</h1></div>
+                            <div class="texto_info"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis id, dignissimos qui non accusamus enim aut quasi excepturi eligendi, sint facilis et temporibus culpa ex cumque mollitia, minus cum ipsa.</p></div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+  
+  <!-- 2do TSMR aquí abajo: -->
+  
+  <div id="contenedor_grid contenedor_subjects">
+              
+    <div class="grid" id="tsmr2" style="display: none;">    
+            <div class="daw">
+                <div class="encabezado_daw"><h1>Desarrollo de Aplicaciones Multiplataforma</h1></div>
+                <div class="grid_info">
+                    <div class="video_info"><iframe width="560" height="315" src="https://www.youtube.com/embed/X66qfyC3HYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="cuerpo_info">
+                        <div class="titulo_info"><h1>¿Que es el desarrollo de Aplicaciones Web?</h1></div>
+                        <div class="texto_info"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis id, dignissimos qui non accusamus enim aut quasi excepturi eligendi, sint facilis et temporibus culpa ex cumque mollitia, minus cum ipsa.</p></div>
+                    </div>
+                    
+                </div>
+            </div>
+  </div>
+  </div>
+  </div>
+  
+  
+  
+  
+  <footer>
+    <div class="container_footer">
+      <div class="izq_footer">
+        <div class="espacio_footer"></div>
+        <div class="logo_footer"><img src="../icons/Logo-florida-blanco.svg" alt=""></div>
+        <div class="redes_sociales_footer">
+          
+          <div class="instagram alineado_iconos"><a href="https://www.instagram.com/florida_uni/" target="_blank"><img class="icons_footer" src="../icons/instagram.svg" alt=""></a></div>
+          
+          <div class="twitter alineado_iconos"><a href="https://twitter.com/floridauni" target="_blank"><img class="icons_footer " src="../icons/twitter.svg" alt=""></a></div>
+  
+          <div class="linkedin_ alineado_iconos"><a href="https://www.linkedin.com/school/15095524/admin/" target="_blank"><img class="icons_footer  linkedin" src="../icons/linkedin.svg" alt=""></a></div>
+  
+          <div class="facebook alineado_iconos"><a href="https://www.facebook.com/floridauniversitaria" target="_blank"><img class="icons_footer" src="../icons/facebook.svg" alt=""></a></div>
+  
+          <div class="pep alineado_iconos"><a href="https://www.youtube.com/channel/UCXcVroy1ofPxv2GRrzp0_Tw" target="_blank"><img class="icons_footer" src="../icons/youtube.svg" alt=""></a></div>
+  
+        </div>
+      </div>
+  
+  
+      <div class="centro_footer">
+        <div class="centro_container">
+          <a href="https://goo.gl/maps/MofCRgt1QWkSV63w7" target="_blank">
+          <div class="centro_direccion espacio_direccion">
+            <p>C/ Rei en Jaume I, nº 2, 46470</p>
+          </div>
+      
+          <div class="centro_direccion">
+            <p>CATARROJA (Valencia)</p>
+          </div>
+        </a>
+  
+          <div class="centro_contacto espacio_contacto">
+            <p> <a href="tel:+34961220380">+34 96 122 03 80</a>
+              - 
+              <a href="mailto:info@florida.es">info@florida.es</a> </p>
+          </div>
+        </div>
+      </div>
+      <div class="der_footer">
+        <div class="der_vacio">
+          <div class="uv"><img src="../icons/som-cooperativa.png" alt=""></div>
+          <div class="uv"><img src="../icons/uv.svg" alt=""></div>
+          <div class="uv"><img src="../icons/upv-ok.svg" alt=""></div>
+          <div class="uv"><img src="../icons/gv.svg" alt=""></div>
+  
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  </body>
+  </html>
+  

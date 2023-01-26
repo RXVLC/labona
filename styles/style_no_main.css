@@ -73,3 +73,61 @@ body{
 #fondo_azul_por_footer{
 	text-align: center;
 }
+
+.recordatorio{
+	text-align: center;
+	color: var(--blanco);
+}
+
+/* aquí van diferentes superiores */
+
+.daw{
+	background-color: yellow;
+	height: auto;
+	width: 100%;
+}
+
+.encabezado_daw{
+	background-color: var(--primario);
+	height: 25rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	color: var(--blanco);
+}
+
+	.grid_info{
+		display: grid;
+		background-color: black;
+		height: 50rem;
+		width: 100%;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 100% 100%;
+		flex-direction: row-reverse;
+		border-spacing: 20px;
+	}
+
+	.titulo_info{
+		background-color: var(--blanco);
+		height: 10rem;
+		color: var(--primario);
+	}
+
+	.texto_info{
+		background-color: var(--blanco);
+		font-size: 1.9rem;
+	}
+
+	.video_info{
+		background-color: var(--blanco);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.cuerpo_info{
+		display: grid;
+		grid-template-rows: 10rem auto;
+	}
