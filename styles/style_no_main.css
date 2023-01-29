@@ -123,7 +123,7 @@ body{
 
 @media (max-width: 768px) {
 	.daw{
-		background-color: yellow;
+		background-color: var(--blanco);
 		height: auto;
 		width: 100%;
 	}
@@ -135,7 +135,7 @@ body{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-size: 2.5rem;
+		font-size: 2.0rem;
 		color: var(--blanco);
 		text-align: center;
 	}
@@ -147,22 +147,25 @@ body{
 			width: 100%;
 			flex-direction: column-reverse;
 			border-spacing: 20px;
+			margin-top: 120px;
 		}
 
 	.titulo_info{
 		background-color: var(--blanco);
-		height: 10rem;
+		height: 100%;
 		color: var(--primario);
 		text-align: center;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		font-size: 1.3rem;
 	}
 	
 	.texto_info{
 		background-color: var(--blanco);
 		font-size: 1.9rem;
 		text-align: center;
+
 	}
 
 	.video_info{
