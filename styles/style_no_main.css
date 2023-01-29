@@ -60,43 +60,48 @@ body{
 
 /* aquí van diferentes superiores */
 
-.daw{
-	background-color: yellow;
-	height: auto;
-	width: 100%;
-}
 
-.encabezado_daw{
-	background-color: var(--primario);
-	height: 25rem;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 3rem;
-	color: var(--blanco);
-}
-
-	.grid_info{
-		display: grid;
-		background-color: black;
-		height: 50rem;
+@media (min-width: 768px) {
+	.daw{
+		background-color: yellow;
+		height: auto;
 		width: 100%;
-		grid-template-columns: 50% 50%;
-		grid-template-rows: 100% 100%;
-		flex-direction: row-reverse;
-		border-spacing: 20px;
 	}
+	
+	.encabezado_daw{
+		background-color: var(--primario);
+		height: 25rem;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 3rem;
+		color: var(--blanco);
+		text-align: center;
+	}
+	
+		.grid_info{
+			display: grid;
+			background-color: black;
+			height: 50rem;
+			width: 100%;
+			grid-template-columns: 50% 50%;
+			grid-template-rows: 100% 100%;
+			flex-direction: row-reverse;
+			border-spacing: 20px;
+		}
 
 	.titulo_info{
 		background-color: var(--blanco);
 		height: 10rem;
 		color: var(--primario);
+		text-align: center;
 	}
 
 	.texto_info{
 		background-color: var(--blanco);
 		font-size: 1.9rem;
+		text-align: center;
 	}
 
 	.video_info{
@@ -112,5 +117,70 @@ body{
 	}
 
 	#foot{
-		margin-top: 0px;
+		margin-top: 500px;
 	}
+}
+
+@media (max-width: 768px) {
+	.daw{
+		background-color: yellow;
+		height: auto;
+		width: 100%;
+	}
+	
+	.encabezado_daw{
+		background-color: var(--primario);
+		height: 45rem;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2.5rem;
+		color: var(--blanco);
+		text-align: center;
+	}
+	
+		.grid_info{
+			display: flex;
+			background-color: var(--blanco);
+			height: 50rem;
+			width: 100%;
+			flex-direction: column-reverse;
+			border-spacing: 20px;
+		}
+
+	.titulo_info{
+		background-color: var(--blanco);
+		height: 10rem;
+		color: var(--primario);
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.texto_info{
+		background-color: var(--blanco);
+		font-size: 1.9rem;
+		text-align: center;
+	}
+
+	.video_info{
+		background-color: var(--blanco);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 10px;
+	}
+
+	.cuerpo_info{
+		display: grid;
+		grid-template-rows: 10rem auto;
+	}
+
+	#foot{
+		margin-top: 500px;
+	}
+}
+
+
