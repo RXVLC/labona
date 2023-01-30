@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beggining - Florida Uni</title>
+    <title>Inicio - Florida Uni</title>
     <link rel="icon" href="https://www.floridauniversitaria.es/wp-content/uploads/2022/09/favicon-newmarcha.jpg" sizes="32x32" />
     <link rel="icon" href="https://www.floridauniversitaria.es/wp-content/uploads/2022/09/favicon-newmarcha.jpg" sizes="192x192" />
     <link rel="stylesheet" href="../styles/style.css">
@@ -54,50 +54,52 @@ if(btns){
 
 </script>
 
-</head>
-<body>
-    <header>
-    <div id="header">
-        <div id="logo_header">
-            <a href="./index.html">
-            <img #logo_principal src="../img/Logo-Florida.png" alt="Logo Florida"></a>
-        </div>
-        
-        <div id="parte_arriba">
-                <nav class="parte_arriba contenedor">
-                    <a href="./subjects.html">VET</a>
-                    <a href="#">Events</a>
-                    <a href="https://blogs.florida.es/floridauniversitariablog/" target="_blank">Blog</a>
-                    <a href="#">Request Info.</a>
-                </nav>
-        </div>
-        
-        <div id="parte_abajo">
+<header>
+  <div id="header">
+      <div id="logo_header">
+          <img #logo_principal src="../img/Logo-Florida.png" alt="Logo Florida">
+      </div>
+      
+      <div id="parte_arriba">
+              <nav class="parte_arriba contenedor">
+                  <a href="#">Notícies</a>
+                  <a href="#">Events</a>
+                  <a href="https://blogs.florida.es/floridauniversitariablog/" target="_blank">Blog</a>
+                  <a href="#">Solicita Info.</a>
+              </nav>
+      </div>
+      
+      <div id="parte_abajo">
           <nav class="parte_abajo contenedor">
-            <a href="./index.html">Beginning</a>
-            <a href="./subjects.html">TSMR Subjects</a>
-            <a href="./superior.html">Studies</a>
-            <a href="./facilities.html">Facilities</a>
-            <a href="./about.html">About us</a>
-        </nav>
-            
+              
+              <a href="./index.html">Inici</a>
+              <a href="#">Sobre Nosaltres</a>
+              <a href="./superior.html">Estudis</a>
+              <a href="#">Model educatiu</a>
+              <a href="#">Internacional</a>
+              
+              
+              
+          </nav>
+          
+      </div>
+      
+  </div>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn" title="Click to see the available languages">Clica per veure llenguatges</button>
+        <div id="myDropdown" class="dropdown-content">
+          <div id="english"><img id="tick" src="../img/tick.png" alt=""><a href="./index.html"> &nbsp; &nbsp; &nbsp;Valencià</a></div>
+      
+      <a href="../en/index.html">English</a>
+      <a href="../es/index.html">Español</a>
         </div>
-        
-    </div>
-        <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn" title="Click to see the available languages">Click for Languages</button>
-          <div id="myDropdown" class="dropdown-content">
-            <div id="english"><img id="tick" src="../img/tick.png" alt=""><a href="#"> &nbsp; &nbsp; &nbsp;English</a></div>
-        
-        <a href="../es/subjects.html">Español</a>
-        <a href="../val/subjects.html">Valencià</a>
-          </div>
-        </div> 
-    </header>
+      </div> 
+  </header>
+
 
     <div class="botones_subjects">
-      <button onclick="TSMR1()"><h1>Click to see/hide the 1st TSMR subjects</h1></button>
-      <button onclick="TSMR2()"><h1>Click to see/hide the 2nd TSMR subjects</h1></button>
+      <button onclick="TSMR1()"><h1>Click para ver/ocultar les asignatures de 1er de TSMR</h1></button>
+      <button onclick="TSMR2()"><h1>Click para ver/ocultar les asignatures de 2on de TSMR</h1></button>
       
     </div>
       
@@ -105,20 +107,18 @@ if(btns){
     
 
       
-      <!-- <div id="fondo_azul_por_footer" style=" display:block;" >&nbsp; <h1>press a button to get info</h1></div> -->
 
           <div id="contenedor_grid contenedor_subjects">
             
             <div class="grid" id="grid1" style="display: none;">   
-              <div class="title_subjects"><h1>1st Course TSMR</h1></div>
+              <div class="title_subjects"><h1>1er Curs TSMR</h1></div>
           <div class="box box_grados" >
             <div class="div_icono_grid">
                 <div class="centrado_icono"><img class="icono_grid" src="../icons/office.svg" alt=""></div>
             </div>
             <div class="texto_grid">
-              <div class="titulo_grid"><h1>Office system</h1></div>
-              <div class="cuerpo_grid"><p>With this subject you learn applications such as word, excel and powerpoint.
-              </p></div>
+              <div class="titulo_grid"><h1>Aplicacions ofimàtiques</h1></div>
+              <div class="cuerpo_grid"><p>Amb aquesta assignatura aprens de manera avançada aplicacions como word, excel i powerpoint.</p></div>
             </div>
           </div>
 
@@ -129,9 +129,9 @@ if(btns){
                 <div class="centrado_icono"><img class="icono_grid" src="../icons/UK.svg" alt=""></div>
             </div>
             <div class="texto_grid">
-              <div class="titulo_grid"><h1>English</h1></div>
-              <div class="cuerpo_grid"><p> In this subject we learn computer-related grammar and vocabulary in English.
-              </p></div>
+              <div class="titulo_grid"><h1>anglés</h1></div>
+              <div class="cuerpo_grid"><p>En aquesta assignatura aprenem gramàtica i vocabulari relacionat amb la informàtica en anglés.
+</p></div>
             </div>
           </div>
 
@@ -142,9 +142,8 @@ if(btns){
                 <div class="centrado_icono"><img class="icono_grid" src="../icons/destornillador.svg" alt=""></div>
             </div>
             <div class="texto_grid">
-              <div class="titulo_grid"><h1>Computer Maintenance</h1></div>
-              <div class="cuerpo_grid"><p>In this subject you learn about the physical components of a computer. In addition, you learn with your own hands how to maintain, assemble and disassemble equipment.
-              </p></div>
+              <div class="titulo_grid"><h1>Muntatge i manteniment</h1></div>
+              <div class="cuerpo_grid"><p>Mitjançant aquesta assignatura aprens els components físics d'un ordinador. A més, aprens amb les teues pròpies mans a mantindre, muntar i desmuntar equips.</p></div>
             </div>
           </div>
 
@@ -154,11 +153,10 @@ if(btns){
                 <div class="centrado_icono"><img class="icono_grid" id="educational" src="../icons/so.svg" alt=""></div>
             </div>
             <div class="texto_grid">
-              <div class="titulo_grid"><h1>Operative systems</h1></div>
-              <div class="cuerpo_grid"><p>In this subject you learn how to manage different operating systems for a computer using virtual machines and you learn how to create users and control their permissions.
-              </p></div>
+              <div class="titulo_grid"><h1>Sistemes operatius</h1></div>
+              <div class="cuerpo_grid"><p> En aquesta assignatura aprens a manejar diferents sistemes operatius per a un ordinador fent ús de màquines virtuals i aprens a crear usuaris i controlar els seus permisos.</p></div>
             </div>
-          </div>
+         </div>
 
 
           <div class="box box_slide_bar2">
@@ -167,9 +165,8 @@ if(btns){
                 <div class="centrado_icono"><img class="icono_grid" id="international" src="../icons/international.svg" alt=""></div>
             </div>
             <div class="texto_grid">
-              <div class="titulo_grid"><h1>Professional Training</h1></div>
-              <div class="cuerpo_grid"><p>This subject teaches you how to find a job. You learn how to write a CV, the different types of contracts, the security measures to comply with and much more.
-              </p></div>
+              <div class="titulo_grid"><h1>FOL</h1></div>
+              <div class="cuerpo_grid"><p>Aquesta assignatura ajuda a com trobar treball. Aprens a escriure un currículum, conéixer els diferents tipus de contracte, les mesures de seguretat que cal complir i moltes coses més.</p></div>
             </div>
           </div>
 
@@ -180,9 +177,8 @@ if(btns){
                 <div class="centrado_icono"><img class="icono_grid" id="about" src="../icons/redes.svg" alt=""></div>
             </div>
             <div class="texto_grid">
-              <div class="titulo_grid"><h1>Local Networking</h1></div>
-              <div class="cuerpo_grid"><p>This subject provides theory and practice on how to implement a local network and how to maintain it.
-              </p></div>
+              <div class="titulo_grid"><h1>Xarxes Locals</h1></div>
+              <div class="cuerpo_grid"><p>En aquesta assignatura es dona teoria i pràctica sobre com implementar una xarxa a nivell local i com mantindre-la.</p></div>
             </div>
           </div>
         </div>
@@ -193,15 +189,14 @@ if(btns){
 <div id="contenedor_grid contenedor_subjects">
             
   <div class="grid" id="tsmr2" style="display: none;">   
-    <div class="title_subjects"><h1>2nd Course TSMR</h1></div>
+    <div class="title_subjects"><h1>2do Curso TSMR</h1></div>
 <div class="box box_grados" >
   <div class="div_icono_grid">
       <div class="centrado_icono"><img class="icono_grid" src="../icons/web.svg" alt=""></div>
   </div>
   <div class="texto_grid">
-    <div class="titulo_grid"><h1>Web App's</h1></div>
-    <div class="cuerpo_grid"><p>This subject is used to learn how to design and develop web pages.
-    </p></div>
+    <div class="titulo_grid"><h1>Aplicacions web</h1></div>
+    <div class="cuerpo_grid"><p>Aquesta assignatura serveix per a aprendre a dissenyar i desenvolupar pàgines web.</p></div>
   </div>
 </div>
 
@@ -212,9 +207,8 @@ if(btns){
       <div class="centrado_icono"><img class="icono_grid" src="../icons/UK.svg" alt=""></div>
   </div>
   <div class="texto_grid">
-    <div class="titulo_grid"><h1>English</h1></div>
-    <div class="cuerpo_grid"><p> In this subject we learn computer-related grammar and vocabulary in English.
-    </p></div>
+    <div class="titulo_grid"><h1>Anglés</h1></div>
+    <div class="cuerpo_grid"><p>En aquesta assignatura aprenem gramàtica i vocabulari relacionat amb la informàtica en anglés.</p></div>
   </div>
 </div>
 
@@ -225,9 +219,8 @@ if(btns){
       <div class="centrado_icono"><img class="icono_grid" src="../icons/ser.svg" alt=""></div>
   </div>
   <div class="texto_grid">
-    <div class="titulo_grid"><h1>Networking Services</h1></div>
-    <div class="cuerpo_grid"><p>This subject teaches how to provide services in a network (DHCP, DNS, TCP/IP etc...).
-    </p></div>
+    <div class="titulo_grid"><h1>Serveis en xarxa</h1></div>
+    <div class="cuerpo_grid"><p>Aquesta assignatura ensenya com proveir serveis en una xarxa (DHCP, DNS, TCP/IP etc…).</p></div>
   </div>
 </div>
 
@@ -237,9 +230,8 @@ if(btns){
       <div class="centrado_icono"><img class="icono_grid" id="educational" src="../icons/linux.svg" alt=""></div>
   </div>
   <div class="texto_grid">
-    <div class="titulo_grid"><h1>Operating Systems for Networking</h1></div>
-    <div class="cuerpo_grid"><p>In this subject you administer operating systems on computers that are connected to a network via a virtual machine. 
-    </p></div>
+    <div class="titulo_grid"><h1>Sistemes operatius en xarxa</h1></div>
+    <div class="cuerpo_grid"><p>En aquesta assignatura administres sistemes operatius d'ordinadors que estiguen connectats a una xarxa mitjançant una màquina virtual.</p></div>
   </div>
 </div>
 
@@ -250,9 +242,8 @@ if(btns){
       <div class="centrado_icono"><img class="icono_grid" id="international" src="../icons/empresa.svg" alt=""></div>
   </div>
   <div class="texto_grid">
-    <div class="titulo_grid"><h1>Business and Entrepreneurship</h1></div>
-    <div class="cuerpo_grid"><p> In this course you learn how to set up a realistic company by creating it from nothing.
-    </p></div>
+    <div class="titulo_grid"><h1>Empresa i iniciativa emprendedora</h1></div>
+    <div class="cuerpo_grid"><p> En aquesta assignatura aprens com crear una empresa realista creant-la des de zero.</p></div>
   </div>
 </div>
 
@@ -263,9 +254,8 @@ if(btns){
       <div class="centrado_icono"><img class="icono_grid" id="about" src="../icons/seguridad_informatica.svg" alt=""></div>
   </div>
   <div class="texto_grid">
-    <div class="titulo_grid"><h1>CyberSecurity</h1></div>
-    <div class="cuerpo_grid"><p>This subject is used to learn how to be safe on the internet and to avoid internet scams by looking at the different attacks carried out by hackers. 
-    </p></div>
+    <div class="titulo_grid"><h1>Seguretat Informàtica</h1></div>
+    <div class="cuerpo_grid"><p>Aquesta assignatura serveix per a aprendre a estar segur en la xarxa i evitar les estafes en internet veient els diferents atacs que fan els hackers. </p></div>
   </div>
 </div>
 </div>

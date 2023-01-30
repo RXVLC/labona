@@ -38,48 +38,53 @@ window.onclick = function(event) {
 
 </head>
 <body>
-    <header>
+  
+  <header>
     <div id="header">
         <div id="logo_header">
-            <img #logo_principal src="../img/Logo-Florida.png" alt="Logo Florida">
+           <a href="./index.html"> <img #logo_principal src="../img/Logo-Florida.png" alt="Logo Florida"> </a>
         </div>
         
         <div id="parte_arriba">
                 <nav class="parte_arriba contenedor">
-                    <a href="./subjects.html">VET</a>
+                    <a href="#">Notícies</a>
                     <a href="#">Events</a>
                     <a href="https://blogs.florida.es/floridauniversitariablog/" target="_blank">Blog</a>
-                    <a href="#">Request Info.</a>
+                    <a href="#">Solicita Info.</a>
                 </nav>
         </div>
         
         <div id="parte_abajo">
-          <nav class="parte_abajo contenedor">
-            <a href="./index.html">Beginning</a>
-            <a href="./subjects.html">TSMR Subjects</a>
-            <a href="./superior.html">Studies</a>
-            <a href="./facilities.html">Facilities</a>
-            <a href="./about.html">About us</a>
-        </nav>
+            <nav class="parte_abajo contenedor">
+                
+                <a href="./index.html">Inici</a>
+                <a href="#">Sobre Nosaltres</a>
+                <a href="#">Estudis</a>
+                <a href="#">Model educatiu</a>
+                <a href="#">Internacional</a>
+                
+                
+                
+            </nav>
             
         </div>
         
     </div>
         <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn" title="Click to see the available languages">Click for Languages</button>
-            <div id="myDropdown" class="dropdown-content">
-            <div id="english"><img id="tick" src="../img/tick.png" alt=""><a href="#"> &nbsp; &nbsp; &nbsp;English</a></div>
+          <button onclick="myFunction()" class="dropbtn" title="Click to see the available languages">Clica per veure llenguatges</button>
+          <div id="myDropdown" class="dropdown-content">
+            <div id="english"><img id="tick" src="../img/tick.png" alt=""><a href="./index.html"> &nbsp; &nbsp; &nbsp;Valencià</a></div>
         
+        <a href="../en/superior.html">English</a>
         <a href="../es/superior.html">Español</a>
-        <a href="../val/superior.html">Valencià</a>
-            </div>
+          </div>
         </div> 
     </header>
     <div class="botones_subjects">
-        <button onclick="DAW()"><h1>WAD</h1></button>
-        <button onclick="DAM()"><h1>MAD</h1></button>
-        <button onclick="ASIR()"><h1>CSNA</h1></button>
-        <button onclick="VIDEOJUEGOS()"><h1>Videogames</h1></button>
+        <button onclick="DAW()"><h1>DAW</h1></button>
+        <button onclick="DAM()"><h1>DAM</h1></button>
+        <button onclick="ASIR()"><h1>ASIR</h1></button>
+        <button onclick="VIDEOJUEGOS()"><h1>Videojocs</h1></button>
       </div>        
   
       
@@ -90,12 +95,12 @@ window.onclick = function(event) {
               
               <div class="grid" id="DAW" style="display: none;">   
                 <div class="daw">
-                    <div class="encabezado_daw"><h1>Web Application Development</h1></div>
+                    <div class="encabezado_daw"><h1>Desenvolupament Aplicacions Web</h1></div>
                     <div class="grid_info">
                         <div class="video_info"><iframe width="560" height="315" src="https://www.youtube.com/embed/X66qfyC3HYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                         <div class="cuerpo_info">
-                            <div class="titulo_info"><h1> What is Web Application Development?</h1></div>
-                            <div class="texto_info"><p>This advanced vocational training course focuses on the development of web applications for different platforms and devices, where skills such as design, programming, databases, web security, user interface design, agile methodologies, and performance optimization are learned. Emerging technologies such as artificial intelligence and virtual reality are also studied to improve the user experience.</p></div>
+                            <div class="titulo_info"><h1> Que es el Desenvolupament de Aplicacions Web?</h1></div>
+                            <div class="texto_info"><p>Aquest grau superior s'enfoca en el desenvolupament d'aplicacions web per a diferents plataformes i dispositius, on s'aprenen habilitats com a disseny, programació, bases de dades, seguretat web, disseny d'interfície d'usuari, metodologies àgils i optimització per al rendiment. També s'estudien tecnologies emergents com a intel·ligència artificial i realitat virtual per a millorar l'experiència de l'usuari.</p></div>
                         </div>
                         
                     </div>
@@ -112,12 +117,12 @@ window.onclick = function(event) {
               
     <div class="grid" id="DAM" style="display: none;">    
             <div class="daw">
-                <div class="encabezado_daw"><h1>	Multi-platform Application Development </h1></div>
+                <div class="encabezado_daw"><h1>Desenvolupament Aplicacions Multiplataforma</h1></div>
                 <div class="grid_info">
                     <div class="video_info"><iframe width="560" height="315" src="https://www.youtube.com/embed/X66qfyC3HYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                     <div class="cuerpo_info">
-                        <div class="titulo_info"><h1> What is Multi-platform Application Development? </h1></div>
-                        <div class="texto_info"><p>In this advanced vocational training course, you learn to develop applications that work on various operating systems and devices, using different programming languages and tools. Topics such as mobile and web application development, multiplatform application design, databases, advanced features and software development methodologies are covered.</p></div>
+                        <div class="titulo_info"><h1>¿Que es el Desenvolupament Aplicacions Multiplataforma?</h1></div>
+                        <div class="texto_info"><p>En aquest grau superior, s'aprén a desenvolupar aplicacions que funcionen en diversos sistemes operatius i dispositius, usant diferents llenguatges de programació i eines. S'aborden temes com a desenvolupament d'aplicacions mòbils i web, disseny d'aplicacions multiplataforma, bases de dades, característiques avançades i metodologies de desenvolupament de programari.</p></div>
                     </div>
                     
                 </div>
@@ -129,12 +134,12 @@ window.onclick = function(event) {
               
       <div class="grid" id="ASIR" style="display: none;">   
         <div class="daw">
-            <div class="encabezado_daw"><h1> Computer Systems and Network Administration </h1></div>
+            <div class="encabezado_daw"><h1>Administració de Sistemes Informàtics i en Xarxa</h1></div>
             <div class="grid_info">
                 <div class="video_info"><iframe width="560" height="315" src="https://www.youtube.com/embed/X66qfyC3HYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                 <div class="cuerpo_info">
-                    <div class="titulo_info"><h1> What is Computer Systems and Network Administration? </h1></div>
-                    <div class="texto_info"><p>This advanced vocational training course focuses on the administration and design of computer systems and networks. Skills such as network design and implementation, computer security, operating systems administration, data storage, virtualization, problem solving, and project management are learned. Additionally, knowledge about systems and networks infrastructure, business continuity, and agile methodologies are acquired. </p></div>
+                    <div class="titulo_info"><h1>¿Que es la Administració de Sistemes Informàtics i en Xarxa</h1></div>
+                    <div class="texto_info"><p>Aquest grau superior se centra en l'administració i disseny de sistemes informàtics i xarxes. S'aprenen habilitats com a disseny i implementació de xarxes, seguretat informàtica, administració de sistemes operatius, emmagatzematge de dades, virtualització, resolució de problemes i gestió de projectes. A més, s'aprén sobre infraestructura de sistemes i xarxes, continuïtat del negoci i metodologies àgils. </p></div>
                 </div>
                 
             </div>
@@ -146,12 +151,12 @@ window.onclick = function(event) {
               
       <div class="grid" id="VJ" style="display: none;">   
         <div class="daw">
-            <div class="encabezado_daw"><h1>Videogames</h1></div>
+            <div class="encabezado_daw"><h1>Videojocs</h1></div>
             <div class="grid_info">
                 <div class="video_info"><iframe width="560" height="315" src="https://www.youtube.com/embed/X66qfyC3HYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                 <div class="cuerpo_info">
-                    <div class="titulo_info"><h1> What is videogames vocational training course? </h1></div>
-                    <div class="texto_info"><p>In this advanced vocational training course, you learn to create animation, game and interactive content using 3D modeling, animation, lighting and rendering tools, as well as to develop video games using game engines and programming tools. You learn to create characters, objects, visual and sound effects and to produce and publish games and interactive applications.</p></div>
+                    <div class="titulo_info"><h1>¿Que es el grau suerior de videojocs?</h1></div>
+                    <div class="texto_info"><p>En aquest grau s'aprén a crear contingut d'animació, jocs i entorns interactius utilitzant eines de modelatge, animació, il·luminació i renderitzat en 3D, així com a desenvolupar videojocs utilitzant motors de jocs i eines de programació. Aprenen a crear personatges, objectes, efectes visuals i sonors i a produir i publicar jocs i aplicacions interactives.</p></div>
                 </div>
                 
             </div>
