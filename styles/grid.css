@@ -146,3 +146,50 @@
 
 }
 
+
+/* grid para facilities */
+
+.grid_galeria{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%; 
+    height: 80%;
+    background-color: white;
+
+    margin-top:30px;
+}
+
+.facility{
+    height: 350px;
+    background-color: beige;
+    opacity: 0%;
+}
+.titulo_grid_fac{
+    background-color: red;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.facility:hover{
+    opacity: 100%;
+    transition: 1s;
+}
+
+.cafeteria{
+        background-image: url(../img/fotos_lugares/COMEDOR-FLORIDA-UNIVERSITARIA.jpg);
+        background-size: 350px 350px;
+}
+
+.biblioteca{
+        background-image: url(../img/fotos_lugares/biblio_flo.jpg);
+        background-size: 350px 350px;
+}
+
+.pabellon{
+    background-image: url(../img/fotos_lugares/pabellon.jpg);
+        background-size: 350px 350px;
+}
+
+

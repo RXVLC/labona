@@ -1,57 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-	<title>Lightbox Demo</title>
-	<style>
-		body {
-			background-color: #3bb2b8;
-			background: linear-gradient(25deg, rgba(66, 230, 149, 1), rgba(66, 32, 149, 1));
-			background-repeat: no-repeat;
-			height: 100vh;
-		}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beggining - Florida Uni</title>
+    <link rel="icon" href="https://www.floridauniversitaria.es/wp-content/uploads/2022/09/favicon-newmarcha.jpg" sizes="32x32" />
+    <link rel="icon" href="https://www.floridauniversitaria.es/wp-content/uploads/2022/09/favicon-newmarcha.jpg" sizes="192x192" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/idiomas.css">
+    <link rel="stylesheet" href="../styles/grid.css">
+    <link rel="stylesheet" href="../styles/style_no_main.css">
+    <script src="../subjects.js"></script>
+    <script>
+      /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
-		.demo {
-			max-width: 800px;
-			margin: 5% auto;
-			padding: 20px;
-			background-color: #fff;
-			border-radius: 10px;
-			overflow: hidden;
-			box-sizing: border-box;
-			box-shadow: 0 0 5px #222;
-		}
-	</style>
-	<link rel="stylesheet" href="../src/lightboxify.min.css">
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+
+<script>
+  const btns = document.querySelectorAll('.btn');
+
+if(btns){
+	btns.forEach(item => {
+  	item.addEventListener('click', function(event){
+    	let id = event.target.getAttribute('data-id');
+      if(id){
+      	document.querySelector('.active').classList.remove('active');
+      	document.getElementById(id).classList.add('active');
+      }
+    })
+  })
+}
+</script>
+    <style>
+
+
+    </style>
 </head>
-
+<header>
+    <div id="header">
+        <div id="logo_header">
+            <a href="./index.html">
+            <img #logo_principal src="../img/Logo-Florida.png" alt="Logo Florida"></a>
+        </div>
+        
+        <div id="parte_arriba">
+                <nav class="parte_arriba contenedor">
+                    <a href="./subjects.html">VET</a>
+                    <a href="#">Events</a>
+                    <a href="https://blogs.florida.es/floridauniversitariablog/" target="_blank">Blog</a>
+                    <a href="#">Request Info.</a>
+                </nav>
+        </div>
+        
+        <div id="parte_abajo">
+          <nav class="parte_abajo contenedor">
+            <a href="./index.html">Beginning</a>
+            <a href="./subjects.html">TSMR Subjects</a>
+            <a href="./superior.html">Studies</a>
+            <a href="./facilities.html">Facilities</a>
+            <a href="./about.html">About us</a>
+        </nav>
+            
+        </div>
+        
+    </div>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn" title="Click to see the available languages">Click for Languages</button>
+          <div id="myDropdown" class="dropdown-content">
+            <div id="english"><img id="tick" src="../img/tick.png" alt=""><a href="#"> &nbsp; &nbsp; &nbsp;English</a></div>
+        
+        <a href="../es/subjects.html">Español</a>
+        <a href="../val/subjects.html">Valencià</a>
+          </div>
+        </div> 
+    </header>
 <body>
-	<div class="demo">
-		<h1 style="text-align: center">Lightbox gallery</h1>
-		<div class="lightbox">
-			<div class="lightbox-item" data-src="http://placehold.it/300/f1b702/fff&text=image1" data-caption="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quae, quam. Ut dolorum quia, unde dicta at harum porro officia obcaecati ipsam deserunt fugit dolore delectus quam, maxime nisi quo.">
-				<img src="http://placehold.it/300/f1b702/fff&text=image1">
+	<div class="grid_galeria">
+
+
+		<div class="cafeteria ">
+			<div class="facility">
+				<div class="titulo_grid_fac"><h1>Cafeteria</h1></div>
+				<div class="cuerpo_grid_fac">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis molestiae placeat nisi! Fugit deserunt fuga dolores doloremque assumenda praesentium velit voluptatibus aperiam mollitia fugiat ad natus, placeat dolor, dignissimos quia!
+				</div>
 			</div>
-			<div class="lightbox-item" data-src="http://placehold.it/300/f1b702/fff&text=image2" data-caption="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quae, quam. Ut dolorum quia, unde dicta at harum porro officia obcaecati ipsam deserunt fugit dolore delectus quam, maxime nisi quo.">
-				<img src="http://placehold.it/300/f1b702/fff&text=image2">
+		</div>
+
+
+		<div class="biblioteca">
+			<div class="facility">
+				<div class="titulo_grid_fac"><h1>Biblioteca</h1></div>
+				<div class="cuerpo_grid_fac">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis molestiae placeat nisi! Fugit deserunt fuga dolores doloremque assumenda praesentium velit voluptatibus aperiam mollitia fugiat ad natus, placeat dolor, dignissimos quia!
+				</div>
 			</div>
-			<div class="lightbox-item" data-src="http://placehold.it/300/f1b702/fff&text=image3" data-caption="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quae, quam. Ut dolorum quia, unde dicta at harum porro officia obcaecati ipsam deserunt fugit dolore delectus quam, maxime nisi quo.">
-				<img src="http://placehold.it/300/f1b702/fff&text=image3">
+		</div>
+		
+		<div class="pabellon">
+			<div class=" facility">
+				<div class="titulo_grid_fac"><h1>Pabellón Florida</h1></div>
+				<div class="cuerpo_grid_fac">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis molestiae placeat nisi! Fugit deserunt fuga dolores doloremque assumenda praesentium velit voluptatibus aperiam mollitia fugiat ad natus, placeat dolor, dignissimos quia!
+				</div>
 			</div>
-			<div class="lightbox-item" data-src="http://placehold.it/300/f1b702/fff&text=image4" data-caption="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quae, quam. Ut dolorum quia, unde dicta at harum porro officia obcaecati ipsam deserunt fugit dolore delectus quam, maxime nisi quo.">
-				<img src="http://placehold.it/300/f1b702/fff&text=image4">
+		</div>
+
+		<div class="content_facility">
+			<div class="cafeteria facility">
+				<div class="titulo_grid_fac"><h1>Cafeteria</h1></div>
+				<div class="cuerpo_grid_fac">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis molestiae placeat nisi! Fugit deserunt fuga dolores doloremque assumenda praesentium velit voluptatibus aperiam mollitia fugiat ad natus, placeat dolor, dignissimos quia!
+				</div>
 			</div>
 		</div>
 	</div>
 </body>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="../src/lightboxify.min.js"></script>
-<script>
-	// lighten up with lightbox
-	$('.lightbox').lightboxify();
-</script>
-
-
 </html>
 
