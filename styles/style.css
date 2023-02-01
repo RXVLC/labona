@@ -399,3 +399,59 @@ footer{
 .uv img{
     height: 100%;
 }
+
+
+
+/* para la parte de about us */
+.foto_about_us{
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.foto_about_us img{
+    height: 100%;
+    width: 70%;
+}
+
+.grupo_container{
+    background-color: yellow;
+    margin-top: 40px;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grupo{
+    background-color: red;
+    height: 100%;
+    width: 70%;
+    display: flex;
+
+}
+
+.sergio{
+    height: 100%;
+    width: 33%;
+    background-color: black;
+    display: flex;
+    float: left;
+}
+
+.rafa{
+    height: 100%;
+    width: 34%;
+    background-color: white;
+    display: flex;
+    float: left;
+}
+.martin{
+    height: 100%;
+    width: 33%;
+    background-color: black;
+    display: flex;
+    float: left;
+}
