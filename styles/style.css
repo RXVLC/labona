@@ -437,7 +437,6 @@ footer{
     .name{
         height: 100%;
         width: 33%;
-        background-color: blue;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -445,7 +444,6 @@ footer{
     .name1{
         height: 100%;
         width: 34%;
-        background-color: blue;
         display: flex;
         flex-direction: column;
         text-align: center;
