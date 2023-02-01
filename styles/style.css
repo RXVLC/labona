@@ -403,55 +403,118 @@ footer{
 
 
 /* para la parte de about us */
-.foto_about_us{
-    height: 40rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.foto_about_us img{
-    height: 100%;
-    width: 70%;
+@media (min-width: 768px) {
+    .foto_about_us{
+        height: 55rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .foto_about_us img{
+        height: 100%;
+        width: 70%;
+    }
+    
+    .grupo_container{
+        margin-top: 40px;
+        height: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .grupo{
+        background-color: red;
+        height: 100%;
+        width: 70%;
+        display: flex;
+        float: left;
+    
+    }
+    
+    .name{
+        height: 100%;
+        width: 33%;
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .name1{
+        height: 100%;
+        width: 34%;
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .sergio_prueba{
+        display: flex;
+        float: left;
+    }
+    
+    .rafa{
+        height: 100%;
+        width: 34%;
+        background-color: white;
+        display: flex;
+        float: left;
+    }
+    .martin{
+        height: 100%;
+        width: 33%;
+        background-color: black;
+        display: flex;
+        float: left;
+    }
+
+    .nombre_persona_grupo{
+        background-color: var(--azul);
+        color: var(--blanco);
+        height: 15%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .imagen_persona_grupo{
+        background-color: var(--primario);
+        height: 40%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagen_persona_grupo img{
+        height: 100%;
+        width: 70%;
+        border-radius: 100%;
+    }
+
+    .bio_persona_grupo{
+        background-color: orange;
+        height: 45%;
+        width: 100%;
+        background-color: var(--blanco);
+        color: var(--primario);
+    }
+    
 }
 
-.grupo_container{
-    background-color: yellow;
-    margin-top: 40px;
-    height: 400px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.grupo{
-    background-color: red;
-    height: 100%;
-    width: 70%;
-    display: flex;
-
-}
-
-.sergio{
-    height: 100%;
-    width: 33%;
-    background-color: black;
-    display: flex;
-    float: left;
-}
-
-.rafa{
-    height: 100%;
-    width: 34%;
-    background-color: white;
-    display: flex;
-    float: left;
-}
-.martin{
-    height: 100%;
-    width: 33%;
-    background-color: black;
-    display: flex;
-    float: left;
+@media (min-width: 1367px) {
+    .foto_about_us{
+        height: 75rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .foto_about_us img{
+        height: 100%;
+        width: 70%;
+    }
 }
