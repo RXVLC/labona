@@ -7,11 +7,11 @@
     <title>Beggining - Florida Uni</title>
     <link rel="icon" href="https://www.floridauniversitaria.es/wp-content/uploads/2022/09/favicon-newmarcha.jpg" sizes="32x32" />
     <link rel="icon" href="https://www.floridauniversitaria.es/wp-content/uploads/2022/09/favicon-newmarcha.jpg" sizes="192x192" />
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/idiomas.css">
-    <link rel="stylesheet" href="./styles/grid.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/idiomas.css">
+    <link rel="stylesheet" href="../styles/grid.css">
     <script>
-      /* When the user clicks on the button,
+      /* Whean the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
@@ -31,43 +31,41 @@ window.onclick = function(event) {
   }
 }
     </script>
+
+
+
 </head>
 <body>
     <header>
     <div id="header">
         <div id="logo_header">
-            <img #logo_principal src="./img/Logo-Florida.png" alt="Logo Florida">
+            <img #logo_principal src="../img/Logo-Florida.png" alt="Logo Florida">
         </div>
         
         <div id="parte_arriba">
                 <nav class="parte_arriba contenedor">
-                    <a href="#">News</a>
-                    <a href="#">Events</a>
+                    <a href="https://www.floridauniversitaria.es/evento" target="_blank">Events</a>
                     <a href="https://blogs.florida.es/floridauniversitariablog/" target="_blank">Blog</a>
-                    <a href="#">Request Info.</a>
+                    <a href="https://www.floridauniversitaria.es/solicita-informacion/" target="_blank">Request Info.</a>
                 </nav>
         </div>
         
         <div id="parte_abajo">
             <nav class="parte_abajo contenedor">
-                
-                <a href="#">Inicio</a>
-                <a href="#">About Us</a>
-                <a href="#">Studies</a>
-                <a href="#">Educational Model</a>
-                <a href="#">International</a>
-                
-                
-                
+                <a href="./en/index.html">Beginning</a>
+                <a href="./en/subjects.html">TSMR Subjects</a>
+                <a href="./en/superior.html">Studies</a>
+                <a href="./en/facilities.html">Facilities</a>
+                <a href="./en/about.html">About us</a>
             </nav>
             
         </div>
         
     </div>
         <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn" title="Click to see the available languages">Click for Languajes</button>
+          <button onclick="myFunction()" class="dropbtn" title="Click to see the available languages">Languages</button>
           <div id="myDropdown" class="dropdown-content">
-            <div id="english"><img id="tick" src="./img/tick.png" alt=""><a href="./index.html"> &nbsp; &nbsp; &nbsp;English</a></div>
+            <div id="english"><img id="tick" src="../img/tick.png" alt=""><a href="./index.html"> &nbsp; &nbsp; &nbsp;English</a></div>
         
         <a href="./es/index.html">Español</a>
         <a href="./val/index.html">Valencià</a>
@@ -82,25 +80,25 @@ window.onclick = function(event) {
             <li class="slide" id="slide1">
               <!-- <a href="#"> -->
                 <p class="caption">Team Work</p>
-                <img src="./img/fotos_nuestras/2.jpeg" alt="photo 1">
+                <img src="../img/fotos_nuestras/2.jpeg" alt="photo 1">
               <!-- </a> -->
             </li>
             <li class="slide" id="slide2">
               <!-- <a href="#"> -->
                 <p class="caption">Coding together</p>
-                <img src="./img/fotos_nuestras/1.jpeg" alt="photo 2">
+                <img src="../img/fotos_nuestras/1.jpeg" alt="photo 2">
               <!-- </a> -->
             </li>
             <li class="slide" id="slide1">
                 <!-- <a href="#"> -->
                   <p class="caption">We are big</p>
-                  <img src="./img/fotos_nuestras/3.jpeg" alt="photo 1">
+                  <img src="../img/fotos_nuestras/3.jpeg" alt="photo 1">
                 <!-- </a> -->
               </li>
             <li class="slide" id="slide2">
                 <!-- <a href="#"> -->
                   <p class="caption">We are Florida</p>
-                  <img src="./img/fotos_nuestras/4.jpeg" alt="photo 2">
+                  <img src="../img/fotos_nuestras/4.jpeg" alt="photo 2">
                 <!-- </a> -->
           </ul>
         </div>
@@ -113,7 +111,7 @@ window.onclick = function(event) {
           <div class="box box_grados">
             <div class="div_icono_grid">
               <a href="./en/subjects.html">
-                <div class="centrado_icono"><img class="icono_grid" src="./icons/study-2-svgrepo-com.svg" alt=""></div>
+                <div class="centrado_icono"><img class="icono_grid" src="../icons/study-2-svgrepo-com.svg" alt=""></div>
             </div>
             <div class="texto_grid">
               <div class="titulo_grid"><h1>Subjects</h1></div>
@@ -124,8 +122,8 @@ window.onclick = function(event) {
           <!-- nose -->
           <div class="box box_">
             <div class="div_icono_grid">
-              <a href="#">
-                <div class="centrado_icono"><img class="icono_grid" src="./icons/education.svg" alt=""></div>
+              <a href="./en/superior.html">
+                <div class="centrado_icono"><img class="icono_grid" src="../icons/education.svg" alt=""></div>
             </div>
             <div class="texto_grid">
               <div class="titulo_grid"><h1>Advanced Vocational training courses</h1></div>
@@ -136,8 +134,8 @@ window.onclick = function(event) {
 
           <div class="box box_content">
             <div class="div_icono_grid">
-              <a href="#">
-                <div class="centrado_icono"><img class="icono_grid" src="./icons/places.svg" alt=""></div>
+              <a href="./en/facilities.html">
+                <div class="centrado_icono"><img class="icono_grid" src="../icons/places.svg" alt=""></div>
             </div>
             <div class="texto_grid">
               <div class="titulo_grid"><h1>Facilities</h1></div>
@@ -145,34 +143,11 @@ window.onclick = function(event) {
             </div></a>
           </div>
 
-          <div class="box box_slide_bar1">
-            <div class="div_icono_grid">
-              <a href="#">
-                <div class="centrado_icono"><img class="icono_grid" id="educational" src="./icons/whiteboard.svg" alt=""></div>
-            </div>
-            <div class="texto_grid">
-              <div class="titulo_grid"><h1> Educational Model </h1></div>
-              <div class="cuerpo_grid"><p>The education is fundamental, here we explain you how we apply the education in Florida.</p></div>
-            </div></a>
-          </div>
-
-
-          <div class="box box_slide_bar2">
-            <div class="div_icono_grid">
-              <a href="#">
-                <div class="centrado_icono"><img class="icono_grid" id="international" src="./icons/international.svg" alt=""></div>
-            </div>
-            <div class="texto_grid">
-              <div class="titulo_grid"><h1> International </h1></div>
-              <div class="cuerpo_grid"><p>Do you know that you can study in almost all countries around the world? Discover more here.</p></div>
-            </div></a>
-          </div>
-
-
+          
           <div class="box box_footer">
             <div class="div_icono_grid">
-              <a href="#">
-                <div class="centrado_icono"><img class="icono_grid" id="about" src="./icons/about.svg" alt=""></div>
+              <a href="./en/about.html">
+                <div class="centrado_icono"><img class="icono_grid" id="about" src="../icons/about.svg" alt=""></div>
             </div>
             <div class="texto_grid">
               <div class="titulo_grid"><h1>About us</h1></div>
@@ -187,18 +162,18 @@ window.onclick = function(event) {
         <div class="container_footer">
           <div class="izq_footer">
             <div class="espacio_footer"></div>
-            <div class="logo_footer"><img src="./icons/Logo-florida-blanco.svg" alt=""></div>
+            <div class="logo_footer"><img src="../icons/Logo-florida-blanco.svg" alt=""></div>
             <div class="redes_sociales_footer">
               
-              <div class="instagram alineado_iconos"><a href="https://www.instagram.com/florida_uni/" target="_blank"><img class="icons_footer" src="./icons/instagram.svg" alt=""></a></div>
+              <div class="instagram alineado_iconos"><a href="https://www.instagram.com/florida_uni/" target="_blank"><img class="icons_footer" src="../icons/instagram.svg" alt=""></a></div>
               
-              <div class="twitter alineado_iconos"><a href="https://twitter.com/floridauni" target="_blank"><img class="icons_footer " src="./icons/twitter.svg" alt=""></a></div>
+              <div class="twitter alineado_iconos"><a href="https://twitter.com/floridauni" target="_blank"><img class="icons_footer " src="../icons/twitter.svg" alt=""></a></div>
 
-              <div class="linkedin_ alineado_iconos"><a href="https://www.linkedin.com/school/15095524/admin/" target="_blank"><img class="icons_footer  linkedin" src="./icons/linkedin.svg" alt=""></a></div>
+              <div class="linkedin_ alineado_iconos"><a href="https://www.linkedin.com/school/15095524/admin/" target="_blank"><img class="icons_footer  linkedin" src="../icons/linkedin.svg" alt=""></a></div>
 
-              <div class="facebook alineado_iconos"><a href="https://www.facebook.com/floridauniversitaria" target="_blank"><img class="icons_footer" src="./icons/facebook.svg" alt=""></a></div>
+              <div class="facebook alineado_iconos"><a href="https://www.facebook.com/floridauniversitaria" target="_blank"><img class="icons_footer" src="../icons/facebook.svg" alt=""></a></div>
 
-              <div class="pep alineado_iconos"><a href="https://www.youtube.com/channel/UCXcVroy1ofPxv2GRrzp0_Tw" target="_blank"><img class="icons_footer" src="./icons/youtube.svg" alt=""></a></div>
+              <div class="pep alineado_iconos"><a href="https://www.youtube.com/channel/UCXcVroy1ofPxv2GRrzp0_Tw" target="_blank"><img class="icons_footer" src="../icons/youtube.svg" alt=""></a></div>
 
             </div>
           </div>
@@ -209,9 +184,8 @@ window.onclick = function(event) {
               <a href="https://goo.gl/maps/MofCRgt1QWkSV63w7" target="_blank">
               <div class="centro_direccion espacio_direccion">
                 <p>C/ Rei en Jaume I, nº 2, 46470</p>
-                
-
               </div>
+          
               <div class="centro_direccion">
                 <p>CATARROJA (Valencia)</p>
               </div>
@@ -226,10 +200,10 @@ window.onclick = function(event) {
           </div>
           <div class="der_footer">
             <div class="der_vacio">
-              <div class="uv"><img src="./icons/som-cooperativa.png" alt=""></div>
-              <div class="uv"><img src="./icons/uv.svg" alt=""></div>
-              <div class="uv"><img src="./icons/upv-ok.svg" alt=""></div>
-              <div class="uv"><img src="./icons/gv.svg" alt=""></div>
+              <div class="uv"><img src="../icons/som-cooperativa.png" alt=""></div>
+              <div class="uv"><img src="../icons/uv.svg" alt=""></div>
+              <div class="uv"><img src="../icons/upv-ok.svg" alt=""></div>
+              <div class="uv"><img src="../icons/gv.svg" alt=""></div>
 
             </div>
           </div>

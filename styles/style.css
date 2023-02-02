@@ -403,6 +403,68 @@ footer{
 
 
 /* para la parte de about us */
+
+@media (max-width: 768px) {
+    .foto_about_us{
+        height: 25rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .foto_about_us img{
+        height: 100%;
+        width: 70%;
+    }
+
+
+    .grupo{
+        
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    .grupo_container{
+        height: 100%;
+        width: 100%;
+    }
+
+    .imagen_persona_grupo{
+        background-color: var(--primario);
+        height: 55%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .imagen_persona_grupo img{
+        height: 100%;
+        width: 70%;
+        border-radius: 100%;
+    }
+
+    .bio_persona_grupo{
+        background-color: orange;
+        height: 150px;
+        width: 100%;
+        background-color: var(--blanco);
+        color: var(--primario);
+        text-align: center;
+    }
+
+    .nombre_persona_grupo{
+        background-color: var(--azul);
+        color: var(--blanco);
+        height: 15%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
 @media (min-width: 768px) {
     .foto_about_us{
         height: 55rem;
@@ -481,7 +543,7 @@ footer{
 
     .imagen_persona_grupo{
         background-color: var(--primario);
-        height: 40%;
+        height: 55%;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -500,6 +562,13 @@ footer{
         width: 100%;
         background-color: var(--blanco);
         color: var(--primario);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .martin img{
+        height: 100%;
+        width: 100%;
     }
     
 }

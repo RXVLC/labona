@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Florida Uni</title>
+    <link rel="icon" href="https://www.floridauniversitaria.es/wp-content/uploads/2022/09/favicon-newmarcha.jpg" sizes="32x32" />
+    <link rel="icon" href="https://www.floridauniversitaria.es/wp-content/uploads/2022/09/favicon-newmarcha.jpg" sizes="192x192" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/idiomas.css">
+    <link rel="stylesheet" href="../styles/grid.css">
+    <link rel="stylesheet" href="../styles/style_no_main.css">
+    <script src="../subjects.js"></script>
+    <script>
+      /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+</head>
+<body>
+    <header>
+    <div id="header">
+        <div id="logo_header"><a href="./index.html">
+            <img #logo_principal src="../img/Logo-Florida.png" alt="Logo Florida">
+        </div></a>
+        <div id="parte_arriba">
+                <nav class="parte_arriba contenedor">
+                    <a href="https://www.floridauniversitaria.es/evento" target="_blank">Events</a>
+                    <a href="https://blogs.florida.es/floridauniversitariablog/" target="_blank">Blog</a>
+                    <a href="https://www.floridauniversitaria.es/solicita-informacion/" target="_blank">Solicita Info.</a>
+                </nav>
+        </div>
+        
+        <div id="parte_abajo">
+            <nav class="parte_abajo contenedor">
+                <a href="./index.html">Inici</a>
+                <a href="./subjects.html">Asignatures TSMX</a>
+                <a href="./superior.html">Estudis</a>
+                <a href="./facilities.html">Comoditats de Florida</a>
+                <a href="./about.html">Sobre Nosaltres</a>
+            </nav>
+        </div>
+        
+    </div>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn" title="Click to see the available languages">Llenguatges</button>
+          <div id="myDropdown" class="dropdown-content">
+            <div id="english"><img id="tick" src="../img/tick.png" alt=""><a href="./index.html"> &nbsp; &nbsp; &nbsp;Valencià</a></div>
+        
+        <a href="../en/about.html">English</a>
+        <a href="../es/about.html">Español</a>
+          </div>
+        </div> 
+    </header>
+
+    <div class="foto_about_us">
+        <img src="../img/fotos_nuestras/About_us.jpg" alt="">
+    </div>
+<div class="grupo_container">
+    <div class="grupo">
+
+        <div class="name">
+          
+            <div class="imagen_persona_grupo">
+              <img src="https://cdn.futwiz.com/assets/img/fifa22/faces/231443.png" alt="">
+            </div>
+                <div class="nombre_persona_grupo">
+                  <h1>Sergio Martínez</h1>
+                </div>
+                  <div class="bio_persona_grupo">
+                    <p>Sóc un ésser generós amb una gran fortuna i un amor per la vida. Gaudeixo dels plaers que ofereix la meva riquesa, però també sóc conscient de la meva responsabilitat d'ajudar els menys afortunats.</p>
+                    </div>
+        </div>
+        <div class="name1">
+          <div class="imagen_persona_grupo">
+            <img src="../img/fotos_nuestras/rafa.png" alt="">
+          </div>
+              <div class="nombre_persona_grupo">
+                <h1>Rafa Navarrete</h1>
+              </div>
+                  <div class="bio_persona_grupo">
+                    <p>Em considere constant i amb molta actitud, aquest projecte ens ha aportat molt tant amb coneixements com com a persones.</p>
+                  </div>
+        </div>
+        <div class="name">
+            <div class="imagen_persona_grupo martin">
+              <img class="foto_martin" src="../img/fotos_nuestras/martin.png" alt="">
+            </div>
+                <div class="nombre_persona_grupo">
+                  <h1>Martín Barrachina</h1>
+                </div>
+                    <div class="bio_persona_grupo">
+                      <p>Sóc una persona que sempre intento millorar, ja sigui per mi mateixa o aprenent dels altres. M'agrada treballar en equip i ajudar els altres.</p>
+                    </div>
+
+        </div>
+    </div>
+</div>
+    
+
+
+
+
+
+    <footer style="margin-top: 90px;">
+        <div class="container_footer">
+          <div class="izq_footer">
+            <div class="espacio_footer"></div>
+            <div class="logo_footer"><img src="../icons/Logo-florida-blanco.svg" alt=""></div>
+            <div class="redes_sociales_footer">
+              
+              <div class="instagram alineado_iconos"><a href="https://www.instagram.com/florida_uni/" target="_blank"><img class="icons_footer" src="../icons/instagram.svg" alt=""></a></div>
+              
+              <div class="twitter alineado_iconos"><a href="https://twitter.com/floridauni" target="_blank"><img class="icons_footer " src="../icons/twitter.svg" alt=""></a></div>
+      
+              <div class="linkedin_ alineado_iconos"><a href="https://www.linkedin.com/school/15095524/admin/" target="_blank"><img class="icons_footer  linkedin" src="../icons/linkedin.svg" alt=""></a></div>
+      
+              <div class="facebook alineado_iconos"><a href="https://www.facebook.com/floridauniversitaria" target="_blank"><img class="icons_footer" src="../icons/facebook.svg" alt=""></a></div>
+      
+              <div class="pep alineado_iconos"><a href="https://www.youtube.com/channel/UCXcVroy1ofPxv2GRrzp0_Tw" target="_blank"><img class="icons_footer" src="../icons/youtube.svg" alt=""></a></div>
+      
+            </div>
+          </div>
+      
+      
+          <div class="centro_footer">
+            <div class="centro_container">
+              <a href="https://goo.gl/maps/MofCRgt1QWkSV63w7" target="_blank">
+              <div class="centro_direccion espacio_direccion">
+                <p>C/ Rei en Jaume I, nº 2, 46470</p>
+              </div>
+          
+              <div class="centro_direccion">
+                <p>CATARROJA (Valencia)</p>
+              </div>
+            </a>
+      
+              <div class="centro_contacto espacio_contacto">
+                <p> <a href="tel:+34961220380">+34 96 122 03 80</a>
+                  - 
+                  <a href="mailto:info@florida.es">info@florida.es</a> </p>
+              </div>
+            </div>
+          </div>
+          <div class="der_footer">
+            <div class="der_vacio">
+              <div class="uv"><img src="../icons/som-cooperativa.png" alt=""></div>
+              <div class="uv"><img src="../icons/uv.svg" alt=""></div>
+              <div class="uv"><img src="../icons/upv-ok.svg" alt=""></div>
+              <div class="uv"><img src="../icons/gv.svg" alt=""></div>
+      
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      </body>
+      </html>
+      
+    
