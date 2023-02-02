@@ -404,7 +404,7 @@ footer{
 
 /* para la parte de about us */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .foto_about_us{
         height: 25rem;
         width: 100%;
@@ -510,25 +510,7 @@ footer{
         flex-direction: column;
         text-align: center;
     }
-    .sergio_prueba{
-        display: flex;
-        float: left;
-    }
-    
-    .rafa{
-        height: 100%;
-        width: 34%;
-        background-color: white;
-        display: flex;
-        float: left;
-    }
-    .martin{
-        height: 100%;
-        width: 33%;
-        background-color: black;
-        display: flex;
-        float: left;
-    }
+
 
     .nombre_persona_grupo{
         background-color: var(--azul);
@@ -563,12 +545,20 @@ footer{
         background-color: var(--blanco);
         color: var(--primario);
         display: flex;
-        align-items: center;
+        
         justify-content: center;
     }
+
+    .bio_persona_grupo p{
+        margin-top: 1.5rem;
+    }
+
     .martin img{
         height: 100%;
         width: 100%;
+    }
+    .martin{
+        height: 29.5rem;
     }
     
 }
@@ -583,5 +573,15 @@ footer{
     .foto_about_us img{
         height: 100%;
         width: 70%;
+    }
+    .imagen_persona_grupo{
+        height: 300px;
+    }
+    .grupo_container{
+        height: 600px;
+    }
+    .martin img{
+        height: 300px;
+        width: 100%;
     }
 }
