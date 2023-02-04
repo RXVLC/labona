@@ -212,7 +212,6 @@ footer{
 /* media queryies para el contenedor y la parte izq. del footer */
 @media (min-width: 768px) {
     .container_footer{
-        background-color: green;
         height: 100%;
         width: 80%;
         margin: auto;
