@@ -7,6 +7,8 @@
     --amarillo: #d1ad2e;
     --azul: #001524;
 }
+/* Para que sirve Root? A lo largo del proyecto hemos puesto muchos colores, por lo tanto hemos definido variables */
+/* Para que en vez de recordarse de los códigos simplemente poner : --"color" */
 
 @font-face {
     font-family: Florida-font;
@@ -27,17 +29,22 @@
     font-weight: normal;
     }
 
+/* Las font-face son fuentes aunque realmente solo hemos usado Florida-font, (Las fuentes son muy similares a las de florida) */
+
 *{
-        padding: 0;
-        margin: 0;
+    padding: 0;
+    margin: 0;
+/* Esto es súper importante, hace que no haya espacio entre elementos */
     }
 
 html{
     font-size: 62.5%;
+    /* Esto es super importantísimo también, a lo largo del proyecto, hemos usado REM y para no liarnos al poner este código */
+    /* Si de normal 16px son 1rem en nuestro proyecto 10px son 1 rem */
 }
 
 body{
-    font-size: 16px; /* 1rem = 10px */
+    font-size: 1.6rem; /* 1rem = 10px */
     font-weight: lighter;
     font-family: "florida-font" ;
     
@@ -59,31 +66,32 @@ header{
     height: 16rem;
     width: 100%;
     color: var(--blanco);
+/* esto es un contenedor donde irá el logo, el nav de arriba y el de abajo, 160px de alto y 100% de ancho */
 }
 
 #logo_header{
-
-height: 100%;
-width: 22rem;
-float: left;
-display: flex;
-align-items: center;
-justify-content: center;
+    height: 100%;
+    width: 22rem;              
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/* Como se puede ver esto es el logo */
 }
 
 #parte_arriba{
-
     width: 100%;
     height: 8rem;
     align-items: center;
     justify-content: center;
     text-align: center;
+/* Aquí el nav de arriba */
 }
 
 .parte_arriba{
     display: flex;
     flex-direction: row;
-    
+/* Aquí el nav de arriba*/
 }
 
 @media (max-width: 768px) {
@@ -92,13 +100,11 @@ justify-content: center;
         height: 100%;
         width: 100%;
         float: left;
-
+/* parte de arriba re-dimensionada para dispositivos móviles */
     }
     .parte_arriba a {
-        
-        margin:1.75rem 0px; 
-        
-        
+        margin:1.75rem 0px;
+/* esto simplemente son márgenes para que se separe solo lateralmente. */
     }
     
     #logo_header{
@@ -106,7 +112,7 @@ justify-content: center;
         align-items: center;
         justify-content: center;
         min-width: 22rem;
-        
+/* Logo redimensionado */
         }
 }
 
@@ -117,10 +123,11 @@ justify-content: center;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 700;
+/* Ponemos font-weight para ponerlo en negrita, 700 es lo mismo que si pusieramos bold, lo explicaste jajaja */
     padding: 1rem;
     border-right: 1px solid rgb(255, 255, 255);
     margin:1.75rem 0; 
-    
+
     }
 
 
@@ -132,12 +139,12 @@ justify-content: center;
     
 
     #parte_abajo{
-
         width: 100%;
         height: 8rem;
         align-items: center;
         justify-content: center;
         text-align: center;
+/* Parte de abajo redimensionada */
     }
     
     .parte_abajo{
@@ -145,7 +152,6 @@ justify-content: center;
         flex-direction: row;
         margin-left: 22px;
         justify-content: center;
-        
     }
     
     @media (max-width: 768px) {
@@ -155,18 +161,12 @@ justify-content: center;
             width: 100%;
             float: left;
             margin: 0 0 ;
-            
-            justify-content: flex-start;
             flex-direction: column;
-            
-    
+/* el flex-direction es para que se alinee en columnas en dispo. moviles */
         }
         .parte_abajo a {
-            margin:1.75rem px; 
             border: 1px var(--blanco) solid;
-
-            
-            
+/* Borde para la parte de abajo */
         }
         .parte_abajo a:hover{
             border: 1px black solid;
@@ -198,6 +198,7 @@ footer{
     background-color: var(--azul);
     height: 300px;
     width: 100%;
+    /* footer, hecho con 300px de alto y 100% de ancho */
 }
 
 @media (max-width: 768px) {
@@ -205,6 +206,7 @@ footer{
     background-color: var(--azul);
     height: 150px;
     width: 100%;
+/* para móviles el footer es de 150px , más peque */
 }
 
 }
@@ -229,6 +231,7 @@ footer{
     .container_footer{
         display: flex;
         flex-direction: column;
+/* Para que se vea en columnas */
         height: 65rem;
         width: 100%;
     }
@@ -243,21 +246,22 @@ footer{
     }
 
 }
-
+/* un pequeño div vacío usado como espacio en blanco */
 .espacio_footer{
     height: 25%;
     width: 100%;
 }
 
+/* el logo de florida en blanco */
 .logo_footer{
     float: left;
     height: 10rem;
     width: 100%;
-    
     display: flex;
     justify-content: center;
 }
 
+/* otro div para los iconos de rrss */
 .redes_sociales_footer{
     height: 30%;
     width: 100%;
@@ -269,7 +273,6 @@ footer{
 .redes_sociales_footer img{
     width: 70%;
     height: 70%;
-    
     transition: 1.5s;
     -moz-transition: 1.5s;
     -webkit-transitin: 1.5s;
@@ -277,11 +280,10 @@ footer{
     /* estos atributos de animación sirven para la compatibilidad de navegadores
     por ejemplo, el que empieza por moz es para mozilla, así respectivamente con
     demás */
-
 }
 
 .redes_sociales_footer a :hover{
-
+/* como los atributos indican esto es para transformar elementos, hay muchos porqué cada uno sirve para un navegador determinado */
     transform:rotate(360deg);
     -ms-transform:rotate(360deg);
     -moz-transform:rotate(360deg);
@@ -289,10 +291,9 @@ footer{
     -o-transform:rotate(360deg);
     
     }
-    
 
 .icons_footer {
-    /* esto es orientativo background-color: black; */
+/* iconos de universidad etc... */
     float: left;
     height: 10%;
     width: 10%;
@@ -303,7 +304,6 @@ footer{
 .alineado_iconos{
     display: flex;
     align-items: center;
-    
     width: 20%;
     height: 100%;
     display: flex;
@@ -404,6 +404,7 @@ footer{
 /* para la parte de about us */
 
 @media (max-width: 767px) {
+/* medidas para teléfonos de las imágenes */
     .foto_about_us{
         height: 25rem;
         width: 100%;
@@ -412,12 +413,12 @@ footer{
     }
     .foto_about_us img{
         height: 100%;
-        width: 70%;
+        width: 100%;
     }
 
 
     .grupo{
-        
+/* agrupar los diferentes miembros de grupo en un contenedor */
         flex-direction: column;
         margin-top: 5px;
     }
@@ -428,6 +429,7 @@ footer{
     }
 
     .imagen_persona_grupo{
+/* Ajustes de la foto del grupo */
         background-color: var(--primario);
         height: 55%;
         width: 100%;
@@ -444,6 +446,7 @@ footer{
     }
 
     .bio_persona_grupo{
+/* Ajustes de el texto que hay del grupo */
         background-color: orange;
         height: 150px;
         width: 100%;
@@ -453,6 +456,7 @@ footer{
     }
 
     .nombre_persona_grupo{
+/* Nombre miembro del grupo */
         background-color: var(--azul);
         color: var(--blanco);
         height: 15%;
@@ -552,6 +556,7 @@ footer{
         margin-top: 1.5rem;
     }
 
+/* A partir de aquí hay ajustes varios debido a que la imagen de martín tenia unos pixelajes diferentes. */
     .martin img{
         height: 100%;
         width: 100%;
@@ -562,6 +567,7 @@ footer{
     
 }
 
+/* Más ajustes para resoluciones altas */
 @media (min-width: 1367px) {
     .foto_about_us{
         height: 75rem;

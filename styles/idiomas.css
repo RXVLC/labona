@@ -65,6 +65,7 @@
 
 /* slider */
 /* la siguiente linea es como el motor de la transicion */
+/* Nos da falso error, funciona correctamente */
 @keyframes slide {
 	
 
@@ -125,6 +126,7 @@ html { scroll-behavior: smooth; }
 	encima, sería; animation-play-state:paused;  */
 }
 
+/* Esta parte del código es para el slider inicial con las imágenes  */
 .slide img {
 	width: 100%;
 	vertical-align: to;

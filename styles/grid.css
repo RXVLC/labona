@@ -1,5 +1,6 @@
 
 .espacio_grid{
+    /* este espacio sirve como espacio en las paginas de begin , simplemente es un div vacío */
     background-color: var(--primario);
     height: 20px;
     width: 100%;
@@ -11,12 +12,15 @@
 }
 
 .box{
+    /* las cajas de los grids */
     border: 4px solid black;
     background-color: var(--secundario);
     text-align:center;
     height: 190px;
 }
+
 @media (min-width: 768px) {
+    /* este media query es para las resoluciones de dispositivos NO móviles */
     .grid{
         height: 100%;
         width:80%;
@@ -34,6 +38,7 @@
 
 
 @media (max-width: 768px) {
+    /* aquí hay otro media Query para que cuando la pantalla se haga pequeña que se ponga en columnas, no en filas */
     .grid{
         display:flex;
         flex-direction: column;
@@ -44,9 +49,9 @@
     }
 }
 
-/* ahora viene algo tedioso, intentaremos re adaptar el grid a resoluciones menores: */
 
 .div_icono_grid{
+    /* como el nombre indica este parámetro sirve para los iconos del grid, en este caso del main o begin */
     float: left;
     background-color: white;
     width: 50%;
@@ -55,6 +60,7 @@
 }
 
 .centrado_icono{
+    /* esto es un div vacío para que los iconos estén centrados. */
     background-color: white;
     display: flex;
     justify-content: center;
@@ -64,21 +70,20 @@
 }
 
 .icono_grid{
+    /* esto sirve para las dimensiones de los iconos de beginning */
     height: 90%;
     width: 100%;
     
 }
 
-#educational , #international {
-    width: 50%;
-}
-
 #about{
+    /* Y esto solamente para el de About us, ya que era de diferente tamaño con lo cual había que hacerlo pequeño */
     width: 60%;
 }
 
 
 /* esto es para resoluciones pequeñas */
+/* Le aplicamos 0% debido a que no queremos fotos en formato teléfono */
 @media (max-width: 700px) {
     .div_icono_grid{
         height: 0%;
@@ -157,7 +162,7 @@
     grid-template-columns: 25% 25% 25% 25%; 
     height: 80%;
     background-color: white;
-
+/* un simple grid */
     margin-top:30px;
 }
 
@@ -171,10 +176,7 @@
     color: var(--blanco);
 
 }
-.facility p{
 
-
-}
 .titulo_grid_fac{
     background-color: var(--primario);
     height: 25%;
@@ -193,6 +195,7 @@
 .facility:hover{
     opacity: 100%;
     transition: 1s;
+    /* esto sirve para que cuando estemos encima se vea texto y no imagen */
 }
 
 .cafeteria{
@@ -215,9 +218,12 @@
         background-size: 350px 350px;
 }
 
+/* Todo esto es para las fotos de facilities */
+
 .espaciete{
     display: none;
 }
+/* un simple espacio que en esta resolucion no se usa */
 }
 
 @media (max-width: 768px) {
@@ -225,7 +231,9 @@
         display: flex;
         flex-direction: column;
         margin-top: 30px;
+        /* esto lo que hace es que para resoluciones pequeñas se vean las facilities en vertical */
     }
+
     .facility{
         height: 35rem;
         background-color: beige;
@@ -235,17 +243,13 @@
         color: var(--blanco);
     
     }
-    .facility p{
-    
-    
-    }
     .titulo_grid_fac{
         background-color: var(--primario);
         height: 25%;
         display: flex;
         justify-content: center;
         align-items: center;
-        
+        /* Todo lo mismo... */
     }
     
     .cuerpo_grid_fac {
@@ -281,5 +285,6 @@
     .espaciete{
         display: flex;
         height: 3.0rem;
+        /* Aquí hay un espacio de 30px para separar las fotos de facilities. */
     }
 }

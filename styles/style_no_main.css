@@ -5,9 +5,10 @@
 	background-color: white;
 	color: var(--primario);
 	border: 0px;
-	/* border-radius: 4rem; pendiente de decision */
+	/* Esto es para los diferentes botones de asignaturas y cursos */
 }
 
+/* Botones redimensionados: */
 @media (max-width: 768px) {
 	.botones_subjects button{
 		width: 100%;
@@ -53,15 +54,12 @@ body{
 }
 
 
-.recordatorio{
-	text-align: center;
-	color: var(--blanco);
-}
 
 /* aquí van diferentes superiores */
 
 
 @media (min-width: 768px) {
+/* Pusimos daw y encabezado Daw pero es la clase que usan los 4 botones. */
 	.daw{
 		background-color: yellow;
 		height: auto;
@@ -80,6 +78,7 @@ body{
 		text-align: center;
 	}
 	
+/* Aquí hay un grid que contiene info acerca de los ciclos */
 		.grid_info{
 			display: grid;
 			background-color: black;
@@ -185,5 +184,7 @@ body{
 		margin-top: 500px;
 	}
 }
+
+/* Esta hoja es similar , se basa en mediaquery nada más */
 
 

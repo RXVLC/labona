@@ -1,3 +1,6 @@
+// La variable VJ hace mención a VIDEOJUEGOS
+// Este código funciona de manera similar por no decir igual que el de subjects
+
 
     function DAW() {
         var DAW = document.getElementById("DAW");
